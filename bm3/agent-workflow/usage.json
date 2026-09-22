@@ -1,0 +1,22 @@
+{
+  "billing_mode": "subscription",
+  "cache_write_input_tokens": 0,
+  "cached_input_tokens": 3007488,
+  "complete": true,
+  "cost_evidence_complete": true,
+  "currency": "USD",
+  "first_output_latency_seconds": 6.091826,
+  "input_tokens": 3261002,
+  "local_estimated_cost": 0.16960936,
+  "local_estimated_cost_source": "price-catalog",
+  "output_tokens": 48964,
+  "price_catalog_id": "openai-gpt-5.6-standard-20260802",
+  "provider_billed_cost": null,
+  "provider_billed_cost_semantics": "not-attributable",
+  "provider_elapsed_seconds": 1463.663449,
+  "provider_total_tokens": 3309966,
+  "reasoning_output_tokens": 15569,
+  "retry_count": 0,
+  "subscription_allocated_cost": null,
+  "token_evidence_complete": true
+}

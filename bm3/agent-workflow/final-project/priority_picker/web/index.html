@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Priority Picker</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main data-testid="priority-app" class="app-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">BACKLOG COMMAND CENTER</p>
+        <h1>Priority Picker</h1>
+        <p class="subtitle">Make the next best move visible.</p>
+      </div>
+      <button id="export-button" data-testid="export-button" class="button button-primary" type="button">Export ordering <span aria-hidden="true">↓</span></button>
+    </header>
+
+    <section class="summary-grid" aria-label="Backlog summary">
+      <div class="summary-card summary-main"><span class="summary-label">Total backlog</span><strong id="total-count">—</strong><span>items in view</span></div>
+      <div class="summary-card"><span class="summary-label">Ready to move</span><strong id="ready-count">—</strong><span>ready items</span></div>
+      <div class="summary-card"><span class="summary-label">Blocked</span><strong id="blocked-count">—</strong><span>need attention</span></div>
+      <div class="summary-card"><span class="summary-label">Average score</span><strong id="average-score">—</strong><span>across view</span></div>
+    </section>
+
+    <section class="workspace">
+      <div class="list-panel">
+        <div class="section-heading">
+          <div><p class="eyebrow">RANKED WORK</p><h2>What deserves focus</h2></div>
+          <span id="visible-count" class="count-pill">Loading…</span>
+        </div>
+        <form class="filters" aria-label="Backlog filters" onsubmit="return false">
+          <div class="field search-field"><label for="search-input">Search backlog</label><input id="search-input" data-testid="search-input" type="search" placeholder="Title, ID, or description" autocomplete="off"></div>
+          <div class="field"><label for="status-filter">Status</label><select id="status-filter" data-testid="status-filter"><option value="all">All statuses</option><option value="ready">Ready</option><option value="in_progress">In progress</option><option value="planned">Planned</option><option value="blocked">Blocked</option></select></div>
+          <div class="field"><label for="risk-filter">Risk</label><select id="risk-filter" data-testid="risk-filter"><option value="all">All risk levels</option><option value="1">Low · 1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">High · 5</option></select></div>
+          <div class="field"><label for="sort-control">Sort by</label><select id="sort-control" data-testid="sort-control"><option value="priority-desc">Priority · high to low</option><option value="priority-asc">Priority · low to high</option><option value="urgency-desc">Urgency · high to low</option><option value="impact-desc">Impact · high to low</option><option value="effort-asc">Effort · low to high</option><option value="title-asc">Title · A to Z</option></select></div>
+        </form>
+        <div id="priority-list" data-testid="priority-list" class="priority-list" aria-live="polite"></div>
+      </div>
+      <aside id="item-detail" data-testid="item-detail" class="detail-panel" aria-label="Selected item details" aria-live="polite"></aside>
+    </section>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>
