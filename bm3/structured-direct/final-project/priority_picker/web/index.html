@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Priority Picker</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main data-testid="priority-app">
+    <header class="hero"><div><p class="eyebrow">BACKLOG TRIAGE</p><h1>Priority Picker</h1><p class="lede">A clear view of what deserves attention next.</p></div><button id="export-button" data-testid="export-button" type="button">Export ordering</button></header>
+    <section class="summary" aria-label="Backlog summary"><div><strong id="total-count">—</strong><span>Total items</span></div><div><strong id="visible-count">—</strong><span>Showing</span></div><div><strong id="blocked-count">—</strong><span>Blocked</span></div></section>
+    <section class="controls" aria-label="Backlog controls">
+      <label>Search <input id="search-input" data-testid="search-input" type="search" placeholder="Search titles or descriptions"></label>
+      <label>Status <select id="status-filter" data-testid="status-filter"><option value="all">All statuses</option><option value="planned">Planned</option><option value="ready">Ready</option><option value="in_progress">In progress</option><option value="blocked">Blocked</option></select></label>
+      <label>Risk <select id="risk-filter" data-testid="risk-filter"><option value="all">All risk levels</option><option value="1">Risk 1</option><option value="2">Risk 2</option><option value="3">Risk 3</option><option value="4">Risk 4</option><option value="5">Risk 5</option></select></label>
+      <label>Sort <select id="sort-control" data-testid="sort-control"><option value="priority:desc">Priority: high to low</option><option value="priority:asc">Priority: low to high</option><option value="title:asc">Title: A to Z</option><option value="urgency:desc">Urgency: high to low</option><option value="risk:desc">Risk: high to low</option></select></label>
+    </section>
+    <p id="message" class="message" role="status"></p>
+    <section class="content"><div id="priority-list" data-testid="priority-list" class="priority-list" aria-live="polite"></div><aside id="item-detail" data-testid="item-detail" class="detail" aria-label="Item details" tabindex="-1"><p class="placeholder">Select an item to see its details.</p></aside></section>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>

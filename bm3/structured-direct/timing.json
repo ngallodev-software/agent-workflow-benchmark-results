@@ -1,0 +1,36 @@
+{
+  "task_wall_seconds": 546.758011,
+  "active_process_seconds": 546.359665,
+  "machine_verification_seconds": 1.147405,
+  "first_output_latency_seconds": null,
+  "provider_elapsed_seconds": null,
+  "phases": [
+    {
+      "phase_id": "analyze-plan",
+      "wall_seconds": 72.57106,
+      "active_process_seconds": 72.47838,
+      "host_overhead_seconds": 0.09268,
+      "delegate_call_seconds": null,
+      "provider_elapsed_seconds": null,
+      "first_output_latency_seconds": null
+    },
+    {
+      "phase_id": "implement",
+      "wall_seconds": 278.491855,
+      "active_process_seconds": 278.405712,
+      "host_overhead_seconds": 0.086143,
+      "delegate_call_seconds": null,
+      "provider_elapsed_seconds": null,
+      "first_output_latency_seconds": null
+    },
+    {
+      "phase_id": "verify-repair",
+      "wall_seconds": 195.695096,
+      "active_process_seconds": 195.475573,
+      "host_overhead_seconds": 0.219523,
+      "delegate_call_seconds": null,
+      "provider_elapsed_seconds": null,
+      "first_output_latency_seconds": null
+    }
+  ]
+}

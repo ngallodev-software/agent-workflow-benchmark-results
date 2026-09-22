@@ -1,0 +1,195 @@
+{
+  "machine_score": 75.0,
+  "maximum_score": 100.0,
+  "eligibility": {
+    "guardrails": [
+      {
+        "detail": "canonical task, fixture, base revision, and environment are pair-bound",
+        "id": "paired_identity",
+        "required": true,
+        "state": "pass"
+      },
+      {
+        "detail": "treatment=structured-direct/v1; other=agent-workflow-full/v1; runner=direct-executor",
+        "id": "declared_treatment",
+        "required": true,
+        "state": "pass"
+      },
+      {
+        "detail": "observed 0.000149s; limit 0.250000s",
+        "id": "start_skew",
+        "required": true,
+        "state": "pass"
+      },
+      {
+        "detail": "no out-of-scope writes",
+        "id": "writable_scope",
+        "required": true,
+        "state": "pass"
+      },
+      {
+        "detail": "adapter=codex-workspace-write; verified=False",
+        "id": "sandbox_isolation",
+        "required": false,
+        "state": "not_verified"
+      },
+      {
+        "detail": "cohort=unassisted; assistance=none",
+        "id": "assistance_cohort",
+        "required": true,
+        "state": "pass"
+      },
+      {
+        "detail": "visual capture state=missing; runtime_state=missing",
+        "id": "visual_capture",
+        "required": true,
+        "state": "fail"
+      },
+      {
+        "detail": "usage complete=True",
+        "id": "provider_usage",
+        "required": true,
+        "state": "pass"
+      },
+      {
+        "detail": "arm terminal state=completed",
+        "id": "harness_integrity",
+        "required": true,
+        "state": "pass"
+      }
+    ],
+    "publication_eligible": false,
+    "required_failures": [
+      "visual_capture"
+    ],
+    "scorer_harness_failures": [],
+    "state": "invalid"
+  },
+  "components": [
+    {
+      "id": "hidden-functional-v2",
+      "earned_points": 36.0,
+      "max_points": 45.0,
+      "failed_checks": [
+        {
+          "id": "hidden.formula.effort-floor",
+          "detail": "calculate_priority floors effort at one: BacklogValidationError: effort must be a finite number from 1 through 5",
+          "earned_points": 0.0,
+          "max_points": 3.0
+        },
+        {
+          "id": "hidden.ranked-schema",
+          "detail": "ranked records expose scores without mutating input",
+          "earned_points": 0.0,
+          "max_points": 3.0
+        },
+        {
+          "id": "hidden.export",
+          "detail": "export contains deterministic order and ranks",
+          "earned_points": 0.0,
+          "max_points": 3.0
+        }
+      ]
+    },
+    {
+      "id": "public-regression-v2",
+      "earned_points": 15.0,
+      "max_points": 15.0,
+      "failed_checks": []
+    },
+    {
+      "id": "robustness-v2",
+      "earned_points": 8.0,
+      "max_points": 10.0,
+      "failed_checks": [
+        {
+          "id": "robust.malformed-load",
+          "detail": "malformed roots and JSON rejected usefully: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)",
+          "earned_points": 0.0,
+          "max_points": 2.0
+        }
+      ]
+    },
+    {
+      "id": "accessibility-ui-v2",
+      "earned_points": 0.0,
+      "max_points": 10.0,
+      "failed_checks": [
+        {
+          "id": "ui.live-app",
+          "detail": "visual assessment missing",
+          "earned_points": 0.0,
+          "max_points": 1.0
+        },
+        {
+          "id": "ui.labels-landmark",
+          "detail": "visual assessment missing",
+          "earned_points": 0.0,
+          "max_points": 1.5
+        },
+        {
+          "id": "ui.search-filter-sort",
+          "detail": "visual assessment missing",
+          "earned_points": 0.0,
+          "max_points": 2.0
+        },
+        {
+          "id": "ui.keyboard-detail",
+          "detail": "visual assessment missing",
+          "earned_points": 0.0,
+          "max_points": 1.0
+        },
+        {
+          "id": "ui.visible-focus",
+          "detail": "visual assessment missing",
+          "earned_points": 0.0,
+          "max_points": 1.0
+        },
+        {
+          "id": "ui.responsive",
+          "detail": "visual assessment missing",
+          "earned_points": 0.0,
+          "max_points": 1.5
+        },
+        {
+          "id": "ui.download",
+          "detail": "visual assessment missing",
+          "earned_points": 0.0,
+          "max_points": 1.5
+        },
+        {
+          "id": "ui.empty-invalid",
+          "detail": "visual assessment missing",
+          "earned_points": 0.0,
+          "max_points": 0.5
+        }
+      ]
+    },
+    {
+      "id": "scope-completeness-v2",
+      "earned_points": 8.0,
+      "max_points": 10.0,
+      "failed_checks": [
+        {
+          "id": "scope.readme",
+          "detail": "README documents scoring, operation and tests",
+          "earned_points": 0.0,
+          "max_points": 2.0
+        }
+      ]
+    },
+    {
+      "id": "engineering-quality-v2",
+      "earned_points": 8.0,
+      "max_points": 10.0,
+      "failed_checks": [
+        {
+          "id": "quality.formula-doc",
+          "detail": "formula and tie breakers documented",
+          "earned_points": 0.0,
+          "max_points": 2.0
+        }
+      ]
+    }
+  ]
+}
