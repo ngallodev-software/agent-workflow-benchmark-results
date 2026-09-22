@@ -20,6 +20,18 @@ This is a one-pair development result (`n=1`). It is descriptive, not a generali
 
 Both arms are formally **invalid for eligible machine/composite comparison** because required visual-capture evidence is missing. The observed machine scores remain useful descriptive evidence under the benchmark contract. Human visual review is also incomplete, so no composite score or winner is reported.
 
+## Published artifacts
+
+The BM3 directory now includes the full public task context and both finished implementations:
+
+- `task/` — digest-matched canonical task and phase prompts, benchmark specification, same-revision profile/scoring/visual contracts, and the exact starting fixture;
+- `structured-direct/final-project/` — completed structured-direct software;
+- `agent-workflow/final-project/` — completed Agent-Workflow software;
+- per-arm `score.json`, `timing.json`, and `usage.json`;
+- `evidence/` — sanitized semantic-qualification evidence and publication-integrity notes.
+
+See `task/SOURCE-PROVENANCE.md` and `evidence/PUBLICATION-INTEGRITY.md` for provenance details.
+
 ## What BM3 isolates
 
 The effective benchmark prompt files are identical between arms except for arm/treatment identity. Both receive the same requirements traceability, plan-before-edit, scope control, acceptance-first verification, phase evidence, self-review, and drift-audit instructions. This removes the Round 2 raw-prompt-versus-structured-workflow confound.
