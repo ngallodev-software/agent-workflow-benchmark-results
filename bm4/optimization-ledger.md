@@ -1,19 +1,21 @@
 # BM4 Optimization Ledger
 
-Populate this only after BM3 evidence has been analyzed.
+BM4 should preserve BM3's task, structured control, model/effort, scoring contract, and evidence guarantees as closely as practical. Candidate changes below are limited to evidence-backed Agent-Workflow optimizations.
 
 | ID | BM3 observation | Change | Mechanism | Expected metric | Safety/quality guardrail | BM4 result |
 | --- | --- | --- | --- | --- | --- | --- |
-| OPT-001 | TBD | TBD | TBD | TBD | Finished-software and machine-score comparison | TBD |
+| OPT-001 | Candidate added 2,217,984 cached-input tokens; 94.5% of total token delta | Reduce replayed context | Deduplicate invariant instructions/state; project concise state; reference durable evidence by stable ID/hash; retrieve details only when needed | Cached input, total tokens, executor-active time | Same structured discipline, lifecycle state, durable evidence, acceptance criteria | TBD |
+| OPT-002 | Implementation grew 336,683 -> 1,884,413 tokens and 278.5s -> 904.0s | Instrument and bound implementation amplification | Record turn count, context bytes/tokens per turn, tool/command loops, repeated prompt/state bytes; remove redundant loops | Implementation wall time/tokens; model turn count | Preserve implementation completeness and machine score | TBD |
+| OPT-003 | Host overhead accounts for only ~18.9s of a 935.5s wall delta | Optimize model-active path before Python bookkeeping | Prioritize context and executor-loop reductions over host micro-optimizations | Executor-active time; total wall time | Do not remove lifecycle/recovery/evidence guarantees | TBD |
+| OPT-004 | Durable receipts/evidence can be stored without being repeatedly supplied to the model | Separate durable evidence from executor context | Keep receipts, provenance, patches, hashes, deterministic state host-side; expose minimal projections and on-demand retrieval | Cached/uncached input; active time | Evidence remains complete, restart-safe, and auditable | TBD |
+| OPT-005 | Deterministic gates do not require semantic re-evaluation | Move deterministic decisions out of model path | Ordinary code for schema validation, lifecycle transitions, policy/scope gates, completion predicates, hashing, sealing; TypeSafe/Jev only for bounded semantic decisions | Model turns; verify/review tokens and wall time | Same policy outcomes; semantic decisions retain shadow/fallback evidence | TBD |
+| OPT-006 | Verify/repair used 1,063,449 tokens vs 489,563 direct | Collapse redundant verification/review | Reuse deterministic test results and unchanged hashes; ask model only about unresolved semantic contradictions/defects | Verify tokens/wall time | Acceptance-first verification unchanged; failures still force repair | TBD |
+| OPT-007 | BM3 structured direct prompt already carries workflow discipline | Minimize lifecycle-specific prompt duplication | Inject only Agent-Workflow-specific state not already present in canonical structured prompts | Cached input; per-phase context size | Control/candidate task instructions remain semantically equivalent | TBD |
+| OPT-008 | BM3 captured package versions but not exact installed source SHAs | Capture exact source provenance | Record repo commit SHA/build identity for benchmark, Agent-Workflow, comparative eval, SpecGen-AW, contract library and TypeSafe SDK where applicable | Reproducibility/integrity | Publication fails clearly if required provenance is missing | TBD |
+| OPT-009 | Execution-only readiness allowed missing visuals, but scoring later invalidated both arms | Separate execution and benchmark completion states | Explicit `execution_complete` vs `benchmark_complete`; surface visual requirement before eligible scoring/publication | Reliability; fewer invalid completed runs | Never silently relax visual/accessibility evidence requirements | TBD |
 
-## Rules
+## BM4 measurement requirements
 
-Each optimization must identify:
+Record task wall time, executor-active time, measured host overhead, total/cached/uncached input, output/reasoning tokens, model turn count, per-phase context bytes/tokens, and phase-level timing. Quality guardrails should preserve or improve eligible machine score and complete the human visual review.
 
-1. the BM3 evidence that motivated it;
-2. the exact mechanism changed;
-3. the metric expected to move;
-4. the correctness/evidence behavior that must remain intact;
-5. the BM4 observed result.
-
-Avoid broad rewrites that make BM3 -> BM4 attribution impossible unless the evidence strongly justifies them.
+Do not credit an efficiency reduction achieved by weakening structured task discipline, lifecycle/recovery semantics, evidence durability, scope controls, or acceptance criteria.
