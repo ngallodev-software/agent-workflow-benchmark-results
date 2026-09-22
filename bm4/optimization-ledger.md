@@ -4,6 +4,12 @@ BM4 uses `gpt-6-luna` at high reasoning effort for both paired arms. It should p
 
 BM3 used `gpt-5.6-luna`, so cross-study absolute performance is not a same-model comparison. Use BM3 to motivate the optimization hypotheses; use the within-BM4 paired GPT-6 Luna comparison to measure treatment effects.
 
+## Implementation status — 2026-09-22
+
+OPT-001 through OPT-007 are implemented in Agent-Workflow `master` at `63627e6ec73fa62c18da64ffc38c5189cced6458`. The BM4 exporter, amplification evidence capture, and host runner are merged in `agent-workflow-benchmark/main` at `00553a491d68a23d05ea1a316852be04c44c3912`.
+
+The Agent-Workflow full cross-platform CI matrix passed at the merged core revision. The benchmark plugin integration CI also passed against that optimized core, and the benchmark default-branch CI passed after merge. BM4 result fields remain `TBD` until the benchmark is executed on the designated host and its evidence archive is consolidated.
+
 | ID | BM3 observation | Change | Mechanism | Expected metric | Safety/quality guardrail | BM4 result |
 | --- | --- | --- | --- | --- | --- | --- |
 | OPT-001 | Candidate added 2,217,984 cached-input tokens; 94.5% of total token delta | Reduce replayed context | Deduplicate invariant instructions/state; project concise state; reference durable evidence by stable ID/hash; retrieve details only when needed | Cached input, total tokens, executor-active time | Same structured discipline, lifecycle state, durable evidence, acceptance criteria | TBD |
