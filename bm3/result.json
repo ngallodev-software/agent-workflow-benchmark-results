@@ -1,34 +1,70 @@
 {
   "schema": "agent-workflow/public-benchmark-result/v1",
-  "benchmark_id": "bm3-structured",
+  "study_id": "bm3",
+  "benchmark_id": "priority-picker-v2",
+  "benchmark_version": "2.0.0",
+  "run_id": "priority-picker-v2-20260922T160058Z-4979b7",
   "claim_level": "development",
-  "status": "running",
+  "status": "awaiting_human_review",
+  "execution_state": "executed",
   "repetitions": 1,
+  "eligible_pairs": 0,
+  "human_complete_pairs": 0,
+  "winner": null,
   "treatments": {
     "control": {
       "treatment_id": "structured-direct/v1",
-      "final_project_path": null,
-      "machine_score": null,
-      "provider_total_tokens": null,
-      "wall_seconds": null
+      "runner_kind": "direct-executor",
+      "final_project_path": "structured-direct/final-project",
+      "machine_score": 75.0,
+      "eligibility": "invalid",
+      "provider_total_tokens": 963980,
+      "wall_seconds": 546.758011,
+      "local_estimated_cost_usd": 0.07707628
     },
     "candidate": {
       "treatment_id": "agent-workflow-full/v1",
-      "final_project_path": null,
-      "machine_score": null,
-      "provider_total_tokens": null,
-      "wall_seconds": null
+      "runner_kind": "agent-workflow",
+      "final_project_path": "agent-workflow/final-project",
+      "machine_score": 79.0,
+      "eligibility": "invalid",
+      "provider_total_tokens": 3309966,
+      "wall_seconds": 1482.26254,
+      "local_estimated_cost_usd": 0.16960936
     }
   },
-  "environment": {
-    "expected_agent_workflow": "0.11.6",
-    "expected_benchmark": "0.3.0",
-    "expected_typesafe_sdk": "0.6.0",
-    "decision_mode": "comparative",
-    "agent_class": "implementation"
+  "deltas_candidate_minus_control": {
+    "machine_score": 4.0,
+    "wall_seconds": 935.5045289999999,
+    "provider_total_tokens": 2345986,
+    "local_estimated_cost_usd": 0.09253307999999999
   },
-  "source_revisions": {},
+  "pair": {
+    "case_id": "standard-backlog",
+    "pair_id": "standard-backlog-r01",
+    "selected_attempt": 1,
+    "pair_wall_seconds": 1483.736595,
+    "start_skew_seconds": 0.000149
+  },
+  "identity": {
+    "fixture_sha256": "631a6db401f4bc89480d25aee4549d7416a141f06256abe9e50d89978aea403c",
+    "task_prompt_sha256": "aeb436c39c62b4767d81938d547d3ae3ae71b0c2f65442d13f76ac1948b94b7d",
+    "base_revision": "ed3f16a6850a77c3327450b18171ea895fb6ccc0",
+    "workflow_final_revision": "8a0dbc824241f1aa277b4a7c641d38902062ff9c",
+    "control_patch_sha256": "da6108e0869ab8ef49da9cf541f94e2290898f3f228f29a0c8e3967e006b66a0"
+  },
+  "private_evidence": {
+    "raw_archive_sha256": "c97d7d002427bd8d1e723c27b234bac4822c5e99fa0a2fc91569a791246066be",
+    "typesafe_audit_sha256": "187391e8375cfcff4c9c23832294930cc9c1a8d6ce25edf0b279988b1d4ab246",
+    "raw_archive_published": false,
+    "raw_typesafe_audit_published": false
+  },
   "limitations": [
-    "Run is currently in progress; no result claims are published yet."
+    "Single paired development run (n=1); descriptive only.",
+    "Both arms are machine-score invalid because required visual capture evidence is missing.",
+    "Human visual review is incomplete, so no composite score is available.",
+    "Filesystem/oracle isolation was not publication-verified.",
+    "Installed package versions are captured, but exact source repository commit SHAs for installed tooling were not recorded in the evidence archive.",
+    "Subscription execution does not expose attributable provider-billed cost; local price-catalog estimates are descriptive."
   ]
 }
