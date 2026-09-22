@@ -1,0 +1,135 @@
+{
+  "schema": "agent-workflow/public-typesafe-qualification/v1",
+  "purpose": "Exercise the real routing Choice/Noul/Score boundary on representative BM3 phase context before paired execution; this is diagnostic evidence, not a treatment.",
+  "decision_mode": "comparative",
+  "decision_profile": "default",
+  "qualification_calls": 3,
+  "treatment_includes_semantic_routing": false,
+  "audit_records": 3,
+  "audit_sha256": "187391e8375cfcff4c9c23832294930cc9c1a8d6ce25edf0b279988b1d4ab246",
+  "statuses": {
+    "success": 3
+  },
+  "primitive_counts": {
+    "choice": 3,
+    "noul": 3,
+    "score": 3
+  },
+  "raw_audit_published": false,
+  "phase_results": [
+    {
+      "phase_id": "analyze-plan",
+      "decisions": [
+        {
+          "decision_id": "routing.task_class",
+          "semantic_type": "choice",
+          "semantic_status": "success",
+          "disposition": "shadow",
+          "fallback_used": false,
+          "fallback_reason": null,
+          "control_result": "implementation",
+          "evidence_result": "documentation",
+          "applied_result": "implementation"
+        },
+        {
+          "decision_id": "routing.interaction_required",
+          "semantic_type": "noul",
+          "semantic_status": "success",
+          "disposition": "shadow",
+          "fallback_used": false,
+          "fallback_reason": null,
+          "control_result": false,
+          "evidence_result": 0.14,
+          "applied_result": false
+        },
+        {
+          "decision_id": "routing.semantic_risk",
+          "semantic_type": "score",
+          "semantic_status": "success",
+          "disposition": "shadow",
+          "fallback_used": true,
+          "fallback_reason": "semantic_uncertainty",
+          "control_result": 1,
+          "evidence_result": 0.57,
+          "applied_result": 1
+        }
+      ]
+    },
+    {
+      "phase_id": "implement",
+      "decisions": [
+        {
+          "decision_id": "routing.task_class",
+          "semantic_type": "choice",
+          "semantic_status": "success",
+          "disposition": "shadow",
+          "fallback_used": false,
+          "fallback_reason": null,
+          "control_result": "implementation",
+          "evidence_result": "implementation",
+          "applied_result": "implementation"
+        },
+        {
+          "decision_id": "routing.interaction_required",
+          "semantic_type": "noul",
+          "semantic_status": "success",
+          "disposition": "shadow",
+          "fallback_used": false,
+          "fallback_reason": null,
+          "control_result": false,
+          "evidence_result": 0.17,
+          "applied_result": false
+        },
+        {
+          "decision_id": "routing.semantic_risk",
+          "semantic_type": "score",
+          "semantic_status": "success",
+          "disposition": "shadow",
+          "fallback_used": true,
+          "fallback_reason": "semantic_uncertainty",
+          "control_result": 1,
+          "evidence_result": 0.95,
+          "applied_result": 1
+        }
+      ]
+    },
+    {
+      "phase_id": "verify-repair",
+      "decisions": [
+        {
+          "decision_id": "routing.task_class",
+          "semantic_type": "choice",
+          "semantic_status": "success",
+          "disposition": "shadow",
+          "fallback_used": false,
+          "fallback_reason": null,
+          "control_result": "implementation",
+          "evidence_result": "implementation",
+          "applied_result": "implementation"
+        },
+        {
+          "decision_id": "routing.interaction_required",
+          "semantic_type": "noul",
+          "semantic_status": "success",
+          "disposition": "shadow",
+          "fallback_used": false,
+          "fallback_reason": null,
+          "control_result": false,
+          "evidence_result": 0.15,
+          "applied_result": false
+        },
+        {
+          "decision_id": "routing.semantic_risk",
+          "semantic_type": "score",
+          "semantic_status": "success",
+          "disposition": "shadow",
+          "fallback_used": true,
+          "fallback_reason": "semantic_uncertainty",
+          "control_result": 1,
+          "evidence_result": 1.04,
+          "applied_result": 1
+        }
+      ]
+    }
+  ]
+}
