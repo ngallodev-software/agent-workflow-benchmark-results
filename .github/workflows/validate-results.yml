@@ -1,0 +1,47 @@
+name: validate-results
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  bm3-projects:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        arm:
+          - structured-direct
+          - agent-workflow
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Run BM3 public regression suite
+        working-directory: bm3/${{ matrix.arm }}/final-project
+        run: python -m unittest discover -s tests/public -v
+
+  bm3-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Validate published JSON artifacts
+        run: |
+          python -m json.tool bm3/task/benchmark-spec.json >/dev/null
+          python -m json.tool bm3/task/scoring-contract.json >/dev/null
+          python -m json.tool bm3/task/visual-rubric.json >/dev/null
+          python -m json.tool bm3/task/visual-runtime-lock.json >/dev/null
+          for arm in structured-direct agent-workflow; do
+            python -m json.tool "bm3/$arm/score.json" >/dev/null
+            python -m json.tool "bm3/$arm/timing.json" >/dev/null
+            python -m json.tool "bm3/$arm/usage.json" >/dev/null
+          done
+          python -m json.tool bm3/result.json >/dev/null
+          python -m json.tool bm3/evidence/typesafe-qualification-summary.json >/dev/null
