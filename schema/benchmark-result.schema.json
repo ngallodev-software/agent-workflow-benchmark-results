@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ngallodev-software/agent-workflow-benchmark-results/schema/benchmark-result.schema.json",
+  "title": "Agent-Workflow Public Benchmark Result",
+  "type": "object",
+  "required": [
+    "schema",
+    "benchmark_id",
+    "claim_level",
+    "status",
+    "treatments",
+    "environment"
+  ],
+  "properties": {
+    "schema": {
+      "const": "agent-workflow/public-benchmark-result/v1"
+    },
+    "benchmark_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "claim_level": {
+      "enum": [
+        "historical-development",
+        "development",
+        "qualified"
+      ]
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "running",
+        "complete",
+        "published"
+      ]
+    },
+    "repetitions": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "treatments": {
+      "type": "object",
+      "minProperties": 2,
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "treatment_id"
+        ],
+        "properties": {
+          "treatment_id": {
+            "type": "string"
+          },
+          "final_project_path": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "machine_score": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "provider_total_tokens": {
+            "type": [
+              "integer",
+              "number",
+              "null"
+            ]
+          },
+          "wall_seconds": {
+            "type": [
+              "number",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "environment": {
+      "type": "object"
+    },
+    "source_revisions": {
+      "type": "object"
+    },
+    "private_evidence": {
+      "type": "object"
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

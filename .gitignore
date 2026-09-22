@@ -1,0 +1,13 @@
+# Raw/private benchmark evidence must not be committed.
+*-evidence.tar.gz
+typesafe-api-audit.jsonl
+**/private/
+**/.env
+**/.env.*
+*.key
+*.pem
+
+# Generated/local noise
+.DS_Store
+__pycache__/
+*.pyc

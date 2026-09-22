@@ -1,0 +1,90 @@
+{
+  "schema": "agent-workflow/public-benchmark-result/v1",
+  "benchmark_id": "priority-picker-v2",
+  "study": "round2",
+  "claim_level": "historical-development",
+  "status": "published",
+  "repetitions": 1,
+  "execution_only": true,
+  "collected_at": "2026-09-22T04:33:45Z",
+  "run_id": "priority-picker-v2-20260922T041443Z-d30585",
+  "pair": {
+    "case_id": "standard-backlog",
+    "pair_id": "standard-backlog-r01",
+    "pair_start_skew_seconds": 0.000135,
+    "pair_critical_path_seconds": 969.786442,
+    "pair_wall_seconds": 971.1307
+  },
+  "treatments": {
+    "control": {
+      "treatment_id": "raw-direct/v1",
+      "wall_seconds": 471.606285,
+      "phase_seconds": {
+        "analyze_plan": 55.203259,
+        "implement": 207.360555,
+        "verify_repair": 209.042471
+      },
+      "tokens": {
+        "input": 564952,
+        "cached_input": 410112,
+        "uncached_input": 154840,
+        "output": 22500,
+        "reasoning": 3599,
+        "total": 587452
+      }
+    },
+    "candidate": {
+      "treatment_id": "agent-workflow-full/v1",
+      "wall_seconds": 969.786442,
+      "phase_seconds": {
+        "analyze_plan": 161.314966,
+        "implement": 577.225701,
+        "verify_repair": 231.245775
+      },
+      "tokens": {
+        "input": 2582862,
+        "cached_input": 2317568,
+        "uncached_input": 265294,
+        "output": 43837,
+        "reasoning": 13663,
+        "total": 2626699
+      }
+    }
+  },
+  "deltas": {
+    "wall_seconds": 498.180157,
+    "wall_percent": 105.63,
+    "wall_ratio": 2.056,
+    "analyze_plan_seconds": 106.111707,
+    "implement_seconds": 369.865146,
+    "verify_repair_seconds": 22.203304,
+    "total_tokens_percent": 347.13,
+    "total_tokens_ratio": 4.471,
+    "uncached_input_percent": 71.33,
+    "uncached_input_ratio": 1.713,
+    "output_ratio": 1.948,
+    "reasoning_ratio": 3.796
+  },
+  "environment": {
+    "agent_workflow": "0.11.4",
+    "benchmark": "0.2.7",
+    "comparative_eval": "0.1.0",
+    "codex_cli": "0.155.1",
+    "model": "gpt-5.6-luna",
+    "reasoning_effort": "high",
+    "decision_mode": "comparative",
+    "agent_class": "implementation",
+    "codebase_memory_mode": "none"
+  },
+  "private_evidence": {
+    "raw_archive_sha256": "fe5664ebe540e195b3eb81c1e8d5471dd7edbceaa8dec6ed185d7517d340ca8",
+    "published": false
+  },
+  "limitations": [
+    "Single paired repetition.",
+    "Execution-only run.",
+    "No machine-quality score.",
+    "No human review score.",
+    "Round 2 compared raw-direct prompting with full Agent-Workflow and therefore mixed prompt-discipline and lifecycle/orchestration effects."
+  ]
+}

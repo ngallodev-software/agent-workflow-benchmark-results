@@ -1,0 +1,34 @@
+{
+  "schema": "agent-workflow/public-benchmark-result/v1",
+  "benchmark_id": "bm3-structured",
+  "claim_level": "development",
+  "status": "running",
+  "repetitions": 1,
+  "treatments": {
+    "control": {
+      "treatment_id": "structured-direct/v1",
+      "final_project_path": null,
+      "machine_score": null,
+      "provider_total_tokens": null,
+      "wall_seconds": null
+    },
+    "candidate": {
+      "treatment_id": "agent-workflow-full/v1",
+      "final_project_path": null,
+      "machine_score": null,
+      "provider_total_tokens": null,
+      "wall_seconds": null
+    }
+  },
+  "environment": {
+    "expected_agent_workflow": "0.11.6",
+    "expected_benchmark": "0.3.0",
+    "expected_typesafe_sdk": "0.6.0",
+    "decision_mode": "comparative",
+    "agent_class": "implementation"
+  },
+  "source_revisions": {},
+  "limitations": [
+    "Run is currently in progress; no result claims are published yet."
+  ]
+}
