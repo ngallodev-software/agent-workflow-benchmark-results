@@ -1,6 +1,8 @@
 # BM4 Optimization Ledger
 
-BM4 should preserve BM3's task, structured control, model/effort, scoring contract, and evidence guarantees as closely as practical. Candidate changes below are limited to evidence-backed Agent-Workflow optimizations.
+BM4 uses `gpt-6-luna` at high reasoning effort for both paired arms. It should preserve BM3's task, structured control, scoring contract, and evidence guarantees as closely as practical. Candidate changes below are limited to evidence-backed Agent-Workflow optimizations.
+
+BM3 used `gpt-5.6-luna`, so cross-study absolute performance is not a same-model comparison. Use BM3 to motivate the optimization hypotheses; use the within-BM4 paired GPT-6 Luna comparison to measure treatment effects.
 
 | ID | BM3 observation | Change | Mechanism | Expected metric | Safety/quality guardrail | BM4 result |
 | --- | --- | --- | --- | --- | --- | --- |
