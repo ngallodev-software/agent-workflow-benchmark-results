@@ -21,11 +21,18 @@ def rank_items(items: Iterable[dict[str, Any]]) -> list[dict[str, Any]]:
     raise NotImplementedError("return backlog items in deterministic priority order")
 
 
-def filter_items(items: Iterable[dict[str, Any]], query: str = "", status: str = "all", risk: str = "all") -> list[dict[str, Any]]:
+def filter_items(
+    items: Iterable[dict[str, Any]],
+    query: str = "",
+    status: str = "all",
+    risk: str = "all",
+) -> list[dict[str, Any]]:
     raise NotImplementedError("filter backlog items")
 
 
-def sort_items(items: Iterable[dict[str, Any]], key: str = "priority", direction: str = "desc") -> list[dict[str, Any]]:
+def sort_items(
+    items: Iterable[dict[str, Any]], key: str = "priority", direction: str = "desc"
+) -> list[dict[str, Any]]:
     raise NotImplementedError("sort backlog items")
 
 
