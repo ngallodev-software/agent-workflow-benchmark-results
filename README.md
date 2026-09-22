@@ -19,7 +19,7 @@ instrument -> benchmark -> diagnose -> optimize -> re-benchmark
 | Study | Comparison | Status | Purpose |
 | --- | --- | --- | --- |
 | Round 2 | `raw-direct/v1` vs `agent-workflow-full/v1` | Historical development smoke | Establish initial wall-time/token overhead |
-| BM3 | `structured-direct/v1` vs `agent-workflow-full/v1` | Running / pending publication | Isolate lifecycle/orchestration overhead from structured prompt discipline |
+| BM3 | `structured-direct/v1` vs `agent-workflow-full/v1` | Execution complete; visual/human review pending | Isolate lifecycle/orchestration overhead from structured prompt discipline |
 | BM4 | structured-direct vs optimized Agent-Workflow | Planned | Measure the effect of targeted waste reduction discovered from BM3 |
 
 ## Repository layout
