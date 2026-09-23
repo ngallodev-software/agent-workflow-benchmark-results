@@ -11,3 +11,4 @@ typesafe-api-audit.jsonl
 .DS_Store
 __pycache__/
 *.pyc
+*-run*/
