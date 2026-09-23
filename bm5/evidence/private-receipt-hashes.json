@@ -1,0 +1,38 @@
+{
+  "receipts": {
+    "consolidation-receipt.json": {
+      "published_raw": false,
+      "sha256": "a0bf3504fa3f910ffb1ef05d5596f72f2d221e96236607db6d3342bd50bc24c0"
+    },
+    "environment.json": {
+      "published_raw": false,
+      "sha256": "c4c3585b67246e9bbf6009f47a8c08697a7a82683bfed531954810885a894395"
+    },
+    "experiment-manifest.json": {
+      "published_raw": false,
+      "sha256": "0a96f16f7bab1f73b8c831b6bc1d50dfc36507e57704cf26e9f1fcb0e23a4761"
+    },
+    "machine-scores.json": {
+      "published_raw": false,
+      "sha256": "404c1d65a7e2de092c6128e6bfad193a81b364ea8febfc3106a32493baf245c7"
+    },
+    "operating-policy.json": {
+      "published_raw": false,
+      "sha256": "b2379c46c51a6227295181e076201eb8f09007f450c55adbd29ad6cb98df025c"
+    },
+    "report.json": {
+      "published_raw": false,
+      "sha256": "c61993f1fbbcba9625c556222f7e0093ca6c1d139e7bda9059354a95cd36f7a5"
+    },
+    "report.md": {
+      "published_raw": false,
+      "sha256": "eb5444603767a9ea277bf7a03a44f50f1e00c10df048ba2f6e7b5208feea926f"
+    },
+    "run-plan.json": {
+      "published_raw": false,
+      "sha256": "0b9c5823c43d377042f221c8262e8c2b0871caf97d8c5d9e292313e47a02baab"
+    }
+  },
+  "run_id": "priority-picker-v3-20260923T132512Z-c0a533",
+  "schema": "agent-workflow/bm5-private-receipt-hashes/v1"
+}

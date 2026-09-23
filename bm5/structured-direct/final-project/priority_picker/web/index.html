@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f3">
+  <title>Priority Picker — Backlog</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="app-shell" data-testid="priority-app">
+    <header class="page-header">
+      <div><p class="eyebrow">PRODUCT OPERATIONS · BACKLOG</p><h1>Priority Picker</h1>
+        <p class="lede">A clear view of what matters next.</p></div>
+      <div class="header-actions"><button class="button button-quiet" id="debug-toggle" data-testid="debug-toggle" type="button" aria-expanded="false">Show debug</button>
+        <button class="button button-primary" id="export-button" data-testid="export-button" type="button">Export JSON</button></div>
+    </header>
+
+    <section class="summary-strip" data-testid="summary-strip" aria-label="Backlog summary">
+      <div class="summary-lead"><span class="summary-kicker">YOUR BACKLOG</span><strong id="summary-total">—</strong><span>items total</span></div>
+      <div class="summary-stat"><span>Ready</span><strong id="summary-ready">—</strong></div>
+      <div class="summary-stat"><span>In progress</span><strong id="summary-progress">—</strong></div>
+      <div class="summary-stat"><span>Blocked</span><strong id="summary-blocked">—</strong></div>
+      <div class="summary-stat summary-top"><span>Top priority</span><strong id="summary-top">—</strong></div>
+    </section>
+
+    <section class="control-panel" data-testid="control-panel" aria-label="Backlog controls">
+      <div class="field search-field"><label for="search-input">Search backlog</label><input id="search-input" data-testid="search-input" type="search" placeholder="Search title, ID, or description" autocomplete="off"></div>
+      <div class="field"><label for="status-filter">Status</label><select id="status-filter" data-testid="status-filter"><option value="all">All statuses</option><option value="planned">Planned</option><option value="ready">Ready</option><option value="in_progress">In progress</option><option value="blocked">Blocked</option></select></div>
+      <div class="field"><label for="risk-filter">Risk</label><select id="risk-filter" data-testid="risk-filter"><option value="all">All levels</option><option value="1">Low · 1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">High · 5</option></select></div>
+      <div class="field"><label for="sort-control">Sort by</label><select id="sort-control" data-testid="sort-control"><option value="priority-desc">Priority · highest first</option><option value="priority-asc">Priority · lowest first</option><option value="urgency-desc">Urgency · highest first</option><option value="impact-desc">Impact · highest first</option><option value="effort-asc">Effort · lowest first</option><option value="title-asc">Title · A to Z</option></select></div>
+    </section>
+    <div id="export-status" class="export-status" data-testid="export-status" role="status" aria-live="polite" hidden></div>
+    <section id="debug-panel" class="debug-panel" data-testid="debug-panel" hidden aria-label="Application debug information"></section>
+
+    <section class="workspace" aria-label="Ranked backlog">
+      <div class="list-column"><div class="section-heading"><div><p class="eyebrow">RANKED BY PRIORITY</p><h2>Backlog</h2></div><span id="result-count" class="result-count">Loading…</span></div>
+        <div id="priority-list" data-testid="priority-list" class="priority-list" role="region" aria-label="Ranked backlog items" aria-live="polite" aria-busy="true"></div></div>
+      <aside id="item-detail" data-testid="item-detail" class="detail-panel" aria-label="Item details" aria-live="polite"><div class="detail-placeholder"><span class="detail-icon">↗</span><h2>Explore an item</h2><p>Select a ranked item to see its description and scoring breakdown.</p></div></aside>
+    </section>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>

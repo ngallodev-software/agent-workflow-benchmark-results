@@ -1,0 +1,22 @@
+{
+  "billing_mode": "subscription",
+  "cache_write_input_tokens": 0,
+  "cached_input_tokens": 2054912,
+  "complete": true,
+  "cost_evidence_complete": false,
+  "currency": null,
+  "first_output_latency_seconds": null,
+  "input_tokens": 2269371,
+  "local_estimated_cost": null,
+  "local_estimated_cost_source": "unavailable",
+  "output_tokens": 39706,
+  "price_catalog_id": null,
+  "provider_billed_cost": null,
+  "provider_billed_cost_semantics": "not-attributable",
+  "provider_elapsed_seconds": null,
+  "provider_total_tokens": 2309077,
+  "reasoning_output_tokens": 14793,
+  "retry_count": null,
+  "subscription_allocated_cost": null,
+  "token_evidence_complete": true
+}

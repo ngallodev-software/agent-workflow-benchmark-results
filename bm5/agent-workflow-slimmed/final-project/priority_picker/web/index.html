@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f8">
+  <title>Priority Picker — Backlog overview</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="app-shell" data-testid="priority-app">
+    <header class="page-header">
+      <div><p class="eyebrow">WORK QUEUE · PORTFOLIO VIEW</p><h1>Priority Picker</h1>
+        <p class="intro">A clear view of what matters next, and why.</p></div>
+      <div class="header-actions"><button class="button button-muted" type="button" data-testid="debug-toggle" aria-expanded="false">Show debug</button>
+        <button class="button button-primary" type="button" data-testid="export-button">↓ <span>Export JSON</span></button></div>
+    </header>
+
+    <section class="summary-strip" data-testid="summary-strip" aria-label="Backlog summary">
+      <div class="summary-lead"><span class="summary-caption">BACKLOG SNAPSHOT</span><strong>Work, ranked with context</strong></div>
+      <div class="summary-stat"><strong id="total-count">—</strong><span>Total items</span></div>
+      <div class="summary-stat"><strong id="ready-count">—</strong><span>Ready to start</span></div>
+      <div class="summary-stat"><strong id="top-score">—</strong><span>Top priority score</span></div>
+    </section>
+
+    <section class="control-panel" data-testid="control-panel" aria-label="Backlog controls">
+      <div class="control search-control"><label for="search-input">Search backlog</label><div class="input-wrap"><span aria-hidden="true">⌕</span><input id="search-input" data-testid="search-input" type="search" placeholder="Search title, description, or ID"></div></div>
+      <div class="control"><label for="status-filter">Status</label><select id="status-filter" data-testid="status-filter"><option value="all">All statuses</option><option value="planned">Planned</option><option value="ready">Ready</option><option value="in_progress">In progress</option><option value="blocked">Blocked</option></select></div>
+      <div class="control"><label for="risk-filter">Risk</label><select id="risk-filter" data-testid="risk-filter"><option value="all">Any risk</option><option value="1">Low · 1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">High · 5</option></select></div>
+      <div class="control sort-control"><label for="sort-control">Sort by</label><select id="sort-control" data-testid="sort-control"><option value="priority-desc">Priority · highest first</option><option value="priority-asc">Priority · lowest first</option><option value="urgency-desc">Urgency · highest first</option><option value="impact-desc">Impact · highest first</option><option value="effort-asc">Effort · lowest first</option><option value="title-asc">Title · A to Z</option></select></div>
+      <p id="result-count" class="result-count" aria-live="polite"></p>
+    </section>
+
+    <section class="workspace" aria-label="Ranked backlog and item details">
+      <div class="list-column"><div class="section-heading"><div><p class="eyebrow">YOUR PRIORITIES</p><h2>Ranked backlog</h2></div><span class="ranking-note">Ranked by impact, urgency &amp; effort</span></div>
+        <div data-testid="priority-list" id="priority-list" class="priority-list" aria-live="polite"><div class="state-message">Loading backlog…</div></div>
+      </div>
+      <aside data-testid="item-detail" id="item-detail" class="detail-panel" aria-label="Selected item details"><div class="detail-placeholder"><span class="placeholder-icon">↖</span><p>Select an item to see its details and scoring breakdown.</p></div></aside>
+    </section>
+
+    <p id="export-status" data-testid="export-status" class="export-status" role="status" aria-live="polite" hidden></p>
+    <section id="debug-panel" class="debug-panel" data-testid="debug-panel" hidden aria-label="Runtime debug information">
+      <div class="debug-heading"><div><p class="eyebrow">RUNTIME OBSERVABILITY</p><h2>Debug details</h2></div><span>Deterministic client state</span></div>
+      <div class="debug-grid">
+        <div><h3>Bound controls</h3><p id="debug-bound-controls" data-testid="debug-bound-controls"></p></div>
+        <div><h3>Data request</h3><p id="debug-data-request" data-testid="debug-data-request" data-source="/api/items" data-status="pending" data-request-count="0" data-item-count="0"></p></div>
+        <div><h3>Current state</h3><p id="debug-state" data-testid="debug-state" data-search="" data-status-filter="all" data-risk-filter="all" data-sort="priority:desc" data-selected-id=""></p></div>
+        <div><h3>Client errors</h3><p id="debug-errors" data-testid="debug-errors" data-count="0">none</p></div>
+      </div>
+    </section>
+    <footer>Priority is a guide for discussion. Scores reflect the factors shown with each item.</footer>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>

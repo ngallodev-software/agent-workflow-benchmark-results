@@ -1,0 +1,279 @@
+{
+  "capture_state": "complete",
+  "checks": [
+    {
+      "detail": "live URL loaded; playwright=1.60.0; browser=151.0.7922.173; app_count=1; item_count=6; errors=['console:error:Failed to load resource: the server responded with a status of 404 (Not Found)']; navigation_errors=[]",
+      "id": "ui.live-app",
+      "passed": false
+    },
+    {
+      "detail": "labels={'search-input': 0, 'status-filter': 0, 'risk-filter': 0, 'sort-control': 0}; main_count=1",
+      "id": "ui.labels-landmark",
+      "passed": false
+    },
+    {
+      "detail": "initial=6; search=[None]; blocked=1; sort_options=['priority-desc', 'priority-asc', 'urgency-desc', 'impact-desc', 'effort-asc', 'title-asc']; selected=priority-asc; before=[None, None, None, None, None, None]; after=[None, None, None, None, None, None]",
+      "id": "ui.search-filter-sort",
+      "passed": false
+    },
+    {
+      "detail": "keyboard activation detail='RANK 1\\nBlocked\\nReplace legacy billing export\\n\\nBKL-104 \u00b7 Priority score 3.7\\n\\nMigrate the monthly billing export after the accounting schema is frozen.\\n\\nSCORING FACTORS\\nImpact\\ni\\n5 / 5\\nUrgency\\ni\\n2 / 5\\nEffort\\ni\\n5 / 5\\nConfidence\\ni\\n3 / 5\\nRisk\\ni\\n5 / 5\\n\\nPriority = (2 \u00d7 impact + 1.5 \u00d7 urgency + confidence + '",
+      "id": "ui.keyboard-detail",
+      "passed": true
+    },
+    {
+      "detail": "computed active-control style={'outlineStyle': 'solid', 'outlineWidth': '3px', 'boxShadow': 'none', 'borderColor': 'rgb(220, 227, 221)'}",
+      "id": "ui.visible-focus",
+      "passed": true
+    },
+    {
+      "detail": "no-overflow results=[True, True, False]; captured=3/3",
+      "id": "ui.responsive",
+      "passed": false
+    },
+    {
+      "detail": "filename=priority-ordering.json; rows=6",
+      "id": "ui.download",
+      "passed": false
+    },
+    {
+      "detail": "empty_text='no matching items\\ntry changing the search or filters.'; invalid_state=True",
+      "id": "ui.empty-invalid",
+      "passed": true
+    },
+    {
+      "detail": "factor_count=35; factors=['impact', 'urgency', 'effort', 'confidence', 'risk', 'impact', 'urgency', 'effort', 'confidence', 'risk', 'impact', 'urgency', 'effort', 'confidence', 'risk', 'impact', 'urgency', 'effort', 'confidence', 'risk', 'impact', 'urgency', 'effort', 'confidence', 'risk', 'impact', 'urgency', 'effort', 'confidence', 'risk', 'impact', 'urgency', 'effort', 'confidence', 'risk']; focus_ok={'confidence': True, 'effort': True, 'impact': True, 'risk': True, 'urgency': True}; hover_ok={'confidence': True, 'effort': True, 'impact': True, 'risk': True, 'urgency': True}",
+      "id": "ui.factor-descriptions",
+      "passed": true
+    },
+    {
+      "detail": "summary=1; controls=1; items=6; scores=6; top_flags=['top', 'top', 'top', 'standard']; top_style_distinct=True; selected_visible=False",
+      "id": "ui.visual-hierarchy",
+      "passed": false
+    },
+    {
+      "detail": "badge_count=7; statuses=['blocked', 'in progress', 'planned', 'ready']; distinct_styles=4",
+      "id": "ui.status-styling",
+      "passed": true
+    },
+    {
+      "detail": "visible=True; text='JSON exported \u00b7 6 items in the current ordering.'",
+      "id": "ui.export-feedback",
+      "passed": true
+    },
+    {
+      "detail": "hidden_default=True; visible=True; bound_ok=True; request_ok=True; state_updates=True; errors_ok=True; non_destructive=True",
+      "id": "ui.debug-observability",
+      "passed": true
+    }
+  ],
+  "observations": {
+    "debug": {
+      "bound_controls_ok": true,
+      "error_count": 0,
+      "errors_ok": true,
+      "hidden_by_default": true,
+      "non_destructive": true,
+      "request": {
+        "itemCount": "6",
+        "requestCount": "1",
+        "source": "/api/items",
+        "status": "success"
+      },
+      "request_ok": true,
+      "state_after": {
+        "riskFilter": "all",
+        "search": "checkout",
+        "selectedId": "BKL-101",
+        "sort": "priority-asc",
+        "statusFilter": "all"
+      },
+      "state_before": {
+        "riskFilter": "all",
+        "search": "",
+        "selectedId": "BKL-104",
+        "sort": "priority-asc",
+        "statusFilter": "all"
+      },
+      "state_updates": true,
+      "visible_when_enabled": true
+    },
+    "download": {
+      "filename": "priority-ordering.json",
+      "json_download": true,
+      "ranks_complete": false,
+      "rows": 6
+    },
+    "empty_invalid": {
+      "empty_ok": true,
+      "invalid_ok": true
+    },
+    "export_feedback": {
+      "text": "JSON exported \u00b7 6 items in the current ordering.",
+      "visible": true
+    },
+    "factor_descriptions": {
+      "count": 35,
+      "factors": [
+        "impact",
+        "urgency",
+        "effort",
+        "confidence",
+        "risk",
+        "impact",
+        "urgency",
+        "effort",
+        "confidence",
+        "risk",
+        "impact",
+        "urgency",
+        "effort",
+        "confidence",
+        "risk",
+        "impact",
+        "urgency",
+        "effort",
+        "confidence",
+        "risk",
+        "impact",
+        "urgency",
+        "effort",
+        "confidence",
+        "risk",
+        "impact",
+        "urgency",
+        "effort",
+        "confidence",
+        "risk",
+        "impact",
+        "urgency",
+        "effort",
+        "confidence",
+        "risk"
+      ],
+      "focus_ok": {
+        "confidence": true,
+        "effort": true,
+        "impact": true,
+        "risk": true,
+        "urgency": true
+      },
+      "hover_ok": {
+        "confidence": true,
+        "effort": true,
+        "impact": true,
+        "risk": true,
+        "urgency": true
+      },
+      "texts": {
+        "confidence": "Confidence in the estimate and expected outcome. Higher confidence raises priority.",
+        "effort": "Estimated work required. Higher effort lowers the score.",
+        "impact": "Expected benefit if this work is completed. Higher impact raises priority.",
+        "risk": "Risk addressed or reduced by this work. Higher risk raises priority.",
+        "urgency": "How time-sensitive the work is. Higher urgency raises priority."
+      }
+    },
+    "live": {
+      "app_count": 1,
+      "console_error_count": 1,
+      "item_count": 6,
+      "navigation_error_count": 0
+    },
+    "status_styling": {
+      "badge_count": 7,
+      "distinct_style_count": 4,
+      "statuses": [
+        "blocked",
+        "in progress",
+        "planned",
+        "ready"
+      ]
+    },
+    "visual_hierarchy": {
+      "control_count": 1,
+      "item_count": 6,
+      "score_count": 6,
+      "selected_visible": false,
+      "summary_count": 1,
+      "top_flags": [
+        "top",
+        "top",
+        "top",
+        "standard",
+        "standard",
+        "standard"
+      ],
+      "top_style_distinct": true
+    }
+  },
+  "runtime": {
+    "browser_executable": "/usr/bin/chromium",
+    "browser_version": "151.0.7922.173",
+    "playwright_version": "1.60.0",
+    "runtime_match": true
+  },
+  "runtime_lock": {
+    "browser_executable_candidates": [
+      "/usr/bin/chromium",
+      "/usr/bin/chromium-browser",
+      "/usr/bin/google-chrome"
+    ],
+    "browser_product": "Chromium",
+    "browser_version": "151.0.7922.173",
+    "color_scheme": "light",
+    "container_image": null,
+    "device_scale_factor": 1,
+    "font_manifest": [
+      {
+        "family": "DejaVu Sans",
+        "resolved_file": "DejaVuSans.ttf"
+      }
+    ],
+    "locale": "en-US",
+    "playwright_version": "1.60.0",
+    "publication_blocker": "A content-addressed browser image and independently verified font manifest remain required before publication claims.",
+    "reduced_motion": "reduce",
+    "reproducibility_state": "local-pinned-development",
+    "schema": "agent-workflow/visual-runtime-lock/v1",
+    "timezone": "UTC",
+    "viewports": [
+      {
+        "height": 1000,
+        "id": "desktop",
+        "width": 1440
+      },
+      {
+        "height": 1112,
+        "id": "tablet",
+        "width": 834
+      },
+      {
+        "height": 844,
+        "id": "mobile",
+        "width": 390
+      }
+    ]
+  },
+  "schema": "agent-workflow/priority-picker-visual-assessment/v2",
+  "screenshots": [
+    {
+      "height": 1000,
+      "id": "desktop",
+      "path": "desktop.png",
+      "width": 1440
+    },
+    {
+      "height": 1112,
+      "id": "tablet",
+      "path": "tablet.png",
+      "width": 834
+    },
+    {
+      "height": 844,
+      "id": "mobile",
+      "path": "mobile.png",
+      "width": 390
+    }
+  ],
+  "url": "<local-live-url-redacted>"
+}

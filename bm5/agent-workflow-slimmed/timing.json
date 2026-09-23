@@ -1,0 +1,63 @@
+{
+  "amplification": {
+    "command_execution_count": 56,
+    "injected_context_bytes": 6109,
+    "injected_context_estimated_tokens": 1529,
+    "launch_prompt_bytes": 29512,
+    "model_turn_count": 3,
+    "tool_call_count": 56
+  },
+  "executor_active_seconds": 738.118378,
+  "host_overhead_seconds": 38.013134,
+  "phase_wall_seconds": 776.131512,
+  "phases": [
+    {
+      "active_process_seconds": 136.712586,
+      "host_overhead_seconds": 6.599029,
+      "phase_id": "analyze-plan",
+      "phase_wall_seconds": 143.311615,
+      "runner_kind": "agent-workflow"
+    },
+    {
+      "active_process_seconds": 449.710363,
+      "host_overhead_seconds": 7.110518,
+      "phase_id": "implement",
+      "phase_wall_seconds": 456.820881,
+      "runner_kind": "agent-workflow"
+    },
+    {
+      "active_process_seconds": 151.695429,
+      "host_overhead_seconds": 24.303587,
+      "phase_id": "verify-repair",
+      "phase_wall_seconds": 175.999016,
+      "runner_kind": "agent-workflow"
+    }
+  ],
+  "protocol": {
+    "command_families": [
+      {
+        "rtk": 17,
+        "type": 1
+      },
+      {
+        "rtk": 17
+      },
+      {
+        "node": 1,
+        "python": 2,
+        "python -m priority_picker.server": 1,
+        "python -m unittest": 1,
+        "rtk": 16
+      }
+    ],
+    "finish_attempts": 0,
+    "message_kind_counts": [],
+    "protocol_command_counts": [
+      {
+        "finish": 2
+      }
+    ],
+    "verification_cache_hits": 0,
+    "verification_cache_misses": 0
+  }
+}

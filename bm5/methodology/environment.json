@@ -1,0 +1,62 @@
+{
+  "codebase_memory_mode": "none",
+  "executor": {
+    "authentication_mode": "subscription-session",
+    "billing_mode": "subscription",
+    "effort": "high",
+    "executor": "codex-cli",
+    "executor_version": "runtime-detected",
+    "model": "gpt-6-luna",
+    "provider": "openai",
+    "sandbox": {
+      "adapter": "codex-workspace-write",
+      "argv_prefix": [],
+      "verified_isolation": false
+    }
+  },
+  "git": "git version 2.39.5",
+  "locale": "C",
+  "machine": "x86_64",
+  "platform": "Linux-6.1.0-49-amd64-x86_64-with-glibc2.36",
+  "processor": null,
+  "python": "3.13.7",
+  "sha256": "5e95fe042d350120dfc8480f33be5cf31748f2fdfd59622363b80be807b932be",
+  "timezone": "UTC",
+  "toolchain": {
+    "agent-workflow": {
+      "editable": false,
+      "source_dirty": false,
+      "source_provenance": "stack-install-manifest",
+      "source_revision": "2a8e601771300842959d7dcb4383ac2efcbe1679",
+      "version": "0.11.8"
+    },
+    "agent-workflow-benchmark": {
+      "editable": false,
+      "source_dirty": false,
+      "source_provenance": "stack-install-manifest",
+      "source_revision": "ec39d4522e151cb33023403f8df834ac1fb66ca9",
+      "version": "0.3.4"
+    },
+    "agent-workflow-comparative-eval": {
+      "editable": false,
+      "source_dirty": false,
+      "source_provenance": "stack-install-manifest",
+      "source_revision": "6cd93bdb8c61eda795f6a11640aa1f652a640a9d",
+      "version": "0.1.0"
+    },
+    "specgen-agent-workflow-contracts": {
+      "editable": false,
+      "source_dirty": false,
+      "source_provenance": "stack-install-manifest",
+      "source_revision": "0fb24cc848e9c3a87652caceb2f1c9d62a499b09",
+      "version": "0.2.1"
+    },
+    "typesafe-sdk": {
+      "editable": false,
+      "source_dirty": null,
+      "source_provenance": "unavailable",
+      "source_revision": null,
+      "version": "0.6.0"
+    }
+  }
+}

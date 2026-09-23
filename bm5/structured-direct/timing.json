@@ -1,0 +1,44 @@
+{
+  "amplification": {
+    "command_execution_count": 47,
+    "injected_context_bytes": 0,
+    "injected_context_estimated_tokens": 0,
+    "launch_prompt_bytes": 23394,
+    "model_turn_count": 3,
+    "tool_call_count": 47
+  },
+  "executor_active_seconds": 960.388157,
+  "host_overhead_seconds": 0.746397,
+  "phase_wall_seconds": 961.134554,
+  "phases": [
+    {
+      "active_process_seconds": 65.201468,
+      "host_overhead_seconds": 0.149603,
+      "phase_id": "analyze-plan",
+      "phase_wall_seconds": 65.351071,
+      "runner_kind": "direct-executor"
+    },
+    {
+      "active_process_seconds": 772.289453,
+      "host_overhead_seconds": 0.240004,
+      "phase_id": "implement",
+      "phase_wall_seconds": 772.529457,
+      "runner_kind": "direct-executor"
+    },
+    {
+      "active_process_seconds": 122.897236,
+      "host_overhead_seconds": 0.35679,
+      "phase_id": "verify-repair",
+      "phase_wall_seconds": 123.254026,
+      "runner_kind": "direct-executor"
+    }
+  ],
+  "protocol": {
+    "command_families": [],
+    "finish_attempts": 0,
+    "message_kind_counts": [],
+    "protocol_command_counts": [],
+    "verification_cache_hits": 0,
+    "verification_cache_misses": 0
+  }
+}

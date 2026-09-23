@@ -1,0 +1,274 @@
+{
+  "capture_state": "complete",
+  "checks": [
+    {
+      "detail": "live URL loaded; playwright=1.60.0; browser=151.0.7922.173; app_count=1; item_count=6; errors=['console:error:Failed to load resource: the server responded with a status of 404 (Not Found)']; navigation_errors=[]",
+      "id": "ui.live-app",
+      "passed": false
+    },
+    {
+      "detail": "labels={'search-input': 0, 'status-filter': 0, 'risk-filter': 0, 'sort-control': 0}; main_count=1",
+      "id": "ui.labels-landmark",
+      "passed": false
+    },
+    {
+      "detail": "initial=6; search=[None]; blocked=1; sort_options=['priority-desc', 'priority-asc', 'urgency-desc', 'impact-desc', 'effort-asc', 'title-asc']; selected=priority-asc; before=[None, None, None, None, None, None]; after=[None, None, None, None, None, None]",
+      "id": "ui.search-filter-sort",
+      "passed": false
+    },
+    {
+      "detail": "keyboard activation detail='SELECTED ITEM \u00b7 BKL-103\\n\\nIn progress\\n18.0000\\nDocument incident handoff\\n\\nCreate a concise handoff view for incident commanders.\\n\\nCOMPLETE FACTOR BREAKDOWN\\n\\nImpact\\n3\\nUrgency\\n4\\nEffort\\n1\\nConfidence\\n5\\nRisk\\n2'",
+      "id": "ui.keyboard-detail",
+      "passed": true
+    },
+    {
+      "detail": "computed active-control style={'outlineStyle': 'solid', 'outlineWidth': '3px', 'boxShadow': 'none', 'borderColor': 'rgb(216, 224, 228)'}",
+      "id": "ui.visible-focus",
+      "passed": true
+    },
+    {
+      "detail": "no-overflow results=[True, True, True]; captured=3/3",
+      "id": "ui.responsive",
+      "passed": true
+    },
+    {
+      "detail": "filename=priority-ordering.json; rows=6",
+      "id": "ui.download",
+      "passed": false
+    },
+    {
+      "detail": "empty_text='no items match these filters. try a different search or clear a filter.'; invalid_state=True",
+      "id": "ui.empty-invalid",
+      "passed": true
+    },
+    {
+      "detail": "factor_count=30; factors=['impact', 'urgency', 'effort', 'confidence', 'risk', 'impact', 'urgency', 'effort', 'confidence', 'risk', 'impact', 'urgency', 'effort', 'confidence', 'risk', 'impact', 'urgency', 'effort', 'confidence', 'risk', 'impact', 'urgency', 'effort', 'confidence', 'risk', 'impact', 'urgency', 'effort', 'confidence', 'risk']; focus_ok={'confidence': True, 'effort': True, 'impact': True, 'risk': True, 'urgency': True}; hover_ok={'confidence': True, 'effort': True, 'impact': True, 'risk': True, 'urgency': True}",
+      "id": "ui.factor-descriptions",
+      "passed": true
+    },
+    {
+      "detail": "summary=1; controls=1; items=6; scores=6; top_flags=['top', 'top', 'top', '']; top_style_distinct=True; selected_visible=False",
+      "id": "ui.visual-hierarchy",
+      "passed": false
+    },
+    {
+      "detail": "badge_count=7; statuses=['blocked', 'in progress', 'planned', 'ready']; distinct_styles=4",
+      "id": "ui.status-styling",
+      "passed": true
+    },
+    {
+      "detail": "visible=True; text='JSON exported \u00b7 6 items in the current ordering.'",
+      "id": "ui.export-feedback",
+      "passed": true
+    },
+    {
+      "detail": "hidden_default=True; visible=True; bound_ok=False; request_ok=True; state_updates=True; errors_ok=True; non_destructive=True",
+      "id": "ui.debug-observability",
+      "passed": false
+    }
+  ],
+  "observations": {
+    "debug": {
+      "bound_controls_ok": false,
+      "error_count": 0,
+      "errors_ok": true,
+      "hidden_by_default": true,
+      "non_destructive": true,
+      "request": {
+        "itemCount": "6",
+        "requestCount": "1",
+        "source": "/api/items",
+        "status": "success"
+      },
+      "request_ok": true,
+      "state_after": {
+        "riskFilter": "all",
+        "search": "checkout",
+        "selectedId": "BKL-103",
+        "sort": "priority:asc",
+        "statusFilter": "all"
+      },
+      "state_before": {
+        "riskFilter": "all",
+        "search": "",
+        "selectedId": "BKL-103",
+        "sort": "priority:asc",
+        "statusFilter": "all"
+      },
+      "state_updates": true,
+      "visible_when_enabled": true
+    },
+    "download": {
+      "filename": "priority-ordering.json",
+      "json_download": true,
+      "ranks_complete": false,
+      "rows": 6
+    },
+    "empty_invalid": {
+      "empty_ok": true,
+      "invalid_ok": true
+    },
+    "export_feedback": {
+      "text": "JSON exported \u00b7 6 items in the current ordering.",
+      "visible": true
+    },
+    "factor_descriptions": {
+      "count": 30,
+      "factors": [
+        "impact",
+        "urgency",
+        "effort",
+        "confidence",
+        "risk",
+        "impact",
+        "urgency",
+        "effort",
+        "confidence",
+        "risk",
+        "impact",
+        "urgency",
+        "effort",
+        "confidence",
+        "risk",
+        "impact",
+        "urgency",
+        "effort",
+        "confidence",
+        "risk",
+        "impact",
+        "urgency",
+        "effort",
+        "confidence",
+        "risk",
+        "impact",
+        "urgency",
+        "effort",
+        "confidence",
+        "risk"
+      ],
+      "focus_ok": {
+        "confidence": true,
+        "effort": true,
+        "impact": true,
+        "risk": true,
+        "urgency": true
+      },
+      "hover_ok": {
+        "confidence": true,
+        "effort": true,
+        "impact": true,
+        "risk": true,
+        "urgency": true
+      },
+      "texts": {
+        "confidence": "How confident we are in the expected outcome.",
+        "effort": "The relative work required; higher effort lowers the score.",
+        "impact": "How much value or improvement this work can deliver.",
+        "risk": "The delivery or outcome risk associated with this work.",
+        "urgency": "How time-sensitive the work is and how soon it matters."
+      }
+    },
+    "live": {
+      "app_count": 1,
+      "console_error_count": 1,
+      "item_count": 6,
+      "navigation_error_count": 0
+    },
+    "status_styling": {
+      "badge_count": 7,
+      "distinct_style_count": 4,
+      "statuses": [
+        "blocked",
+        "in progress",
+        "planned",
+        "ready"
+      ]
+    },
+    "visual_hierarchy": {
+      "control_count": 1,
+      "item_count": 6,
+      "score_count": 6,
+      "selected_visible": false,
+      "summary_count": 1,
+      "top_flags": [
+        "top",
+        "top",
+        "top",
+        "",
+        "",
+        ""
+      ],
+      "top_style_distinct": true
+    }
+  },
+  "runtime": {
+    "browser_executable": "/usr/bin/chromium",
+    "browser_version": "151.0.7922.173",
+    "playwright_version": "1.60.0",
+    "runtime_match": true
+  },
+  "runtime_lock": {
+    "browser_executable_candidates": [
+      "/usr/bin/chromium",
+      "/usr/bin/chromium-browser",
+      "/usr/bin/google-chrome"
+    ],
+    "browser_product": "Chromium",
+    "browser_version": "151.0.7922.173",
+    "color_scheme": "light",
+    "container_image": null,
+    "device_scale_factor": 1,
+    "font_manifest": [
+      {
+        "family": "DejaVu Sans",
+        "resolved_file": "DejaVuSans.ttf"
+      }
+    ],
+    "locale": "en-US",
+    "playwright_version": "1.60.0",
+    "publication_blocker": "A content-addressed browser image and independently verified font manifest remain required before publication claims.",
+    "reduced_motion": "reduce",
+    "reproducibility_state": "local-pinned-development",
+    "schema": "agent-workflow/visual-runtime-lock/v1",
+    "timezone": "UTC",
+    "viewports": [
+      {
+        "height": 1000,
+        "id": "desktop",
+        "width": 1440
+      },
+      {
+        "height": 1112,
+        "id": "tablet",
+        "width": 834
+      },
+      {
+        "height": 844,
+        "id": "mobile",
+        "width": 390
+      }
+    ]
+  },
+  "schema": "agent-workflow/priority-picker-visual-assessment/v2",
+  "screenshots": [
+    {
+      "height": 1000,
+      "id": "desktop",
+      "path": "desktop.png",
+      "width": 1440
+    },
+    {
+      "height": 1112,
+      "id": "tablet",
+      "path": "tablet.png",
+      "width": 834
+    },
+    {
+      "height": 844,
+      "id": "mobile",
+      "path": "mobile.png",
+      "width": 390
+    }
+  ],
+  "url": "<local-live-url-redacted>"
+}

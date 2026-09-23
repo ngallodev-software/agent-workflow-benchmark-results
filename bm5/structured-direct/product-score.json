@@ -1,0 +1,314 @@
+{
+  "contract_sha256": "aadb3a793f8ee6edc320dc82e918314f95599020f8bebd6a171664dbc8b5ff29",
+  "dimensions": [
+    {
+      "checks": [
+        {
+          "detail": "scaled hidden-functional score 36/45",
+          "earned_points": 20.0,
+          "evidence_references": [
+            "machine:hidden_functional"
+          ],
+          "id": "product.core.hidden-functional-scaled",
+          "max_points": 25.0,
+          "passed": false
+        }
+      ],
+      "earned_points": 20.0,
+      "id": "core_computation_data",
+      "label": "Core computation/data-layer correctness",
+      "max_points": 25.0
+    },
+    {
+      "checks": [
+        {
+          "detail": "fixture load plus public server contract pass",
+          "earned_points": 4.0,
+          "evidence_references": [
+            "machine:hidden.load",
+            "machine:public.export-server"
+          ],
+          "id": "product.integration.fixture-load",
+          "max_points": 4.0,
+          "passed": true
+        },
+        {
+          "detail": "browser rendered 6 of 6 expected supplied items",
+          "earned_points": 10.0,
+          "evidence_references": [
+            "visual:observations.live.item_count"
+          ],
+          "id": "product.integration.render-expected-items",
+          "max_points": 10.0,
+          "passed": true
+        },
+        {
+          "detail": "populated supplied-data state observed",
+          "earned_points": 6.0,
+          "evidence_references": [
+            "visual:observations.live.item_count"
+          ],
+          "id": "product.integration.populated-state",
+          "max_points": 6.0,
+          "passed": true
+        }
+      ],
+      "earned_points": 20.0,
+      "id": "end_to_end_data_integration",
+      "label": "End-to-end supplied-data integration",
+      "max_points": 20.0
+    },
+    {
+      "checks": [
+        {
+          "detail": "item-dependent search/filter/sort evidence did not pass",
+          "earned_points": 0.0,
+          "evidence_references": [
+            "visual:ui.search-filter-sort"
+          ],
+          "id": "product.interaction.search-filter-sort",
+          "max_points": 5.0,
+          "passed": false
+        },
+        {
+          "detail": "keyboard detail check passed",
+          "earned_points": 4.0,
+          "evidence_references": [
+            "visual:ui.keyboard-detail"
+          ],
+          "id": "product.interaction.keyboard-detail",
+          "max_points": 4.0,
+          "passed": true
+        },
+        {
+          "detail": "download rows=6; expected=6; full_visual_pass=False",
+          "earned_points": 2.5,
+          "evidence_references": [
+            "visual:ui.download",
+            "visual:observations.download"
+          ],
+          "id": "product.interaction.export",
+          "max_points": 5.0,
+          "passed": false
+        },
+        {
+          "detail": "empty_ok=True; invalid_ok=True",
+          "earned_points": 3.0,
+          "evidence_references": [
+            "visual:ui.empty-invalid",
+            "visual:observations.empty_invalid"
+          ],
+          "id": "product.interaction.empty-invalid",
+          "max_points": 3.0,
+          "passed": true
+        },
+        {
+          "detail": "visible export feedback passed",
+          "earned_points": 3.0,
+          "evidence_references": [
+            "visual:ui.export-feedback",
+            "visual:observations.export_feedback"
+          ],
+          "id": "product.interaction.export-feedback",
+          "max_points": 3.0,
+          "passed": true
+        }
+      ],
+      "earned_points": 12.5,
+      "id": "required_interactions",
+      "label": "Required interactive product behavior",
+      "max_points": 20.0
+    },
+    {
+      "checks": [
+        {
+          "detail": "labels/landmark failed",
+          "earned_points": 0.0,
+          "evidence_references": [
+            "visual:ui.labels-landmark"
+          ],
+          "id": "product.presentation.labels-landmark",
+          "max_points": 2.0,
+          "passed": false
+        },
+        {
+          "detail": "visible focus passed",
+          "earned_points": 2.0,
+          "evidence_references": [
+            "visual:ui.visible-focus"
+          ],
+          "id": "product.presentation.visible-focus",
+          "max_points": 2.0,
+          "passed": true
+        },
+        {
+          "detail": "responsive/no-overflow failed",
+          "earned_points": 0.0,
+          "evidence_references": [
+            "visual:ui.responsive"
+          ],
+          "id": "product.presentation.responsive",
+          "max_points": 2.0,
+          "passed": false
+        },
+        {
+          "detail": "populated presentation observable=True",
+          "earned_points": 1.0,
+          "evidence_references": [
+            "visual:observations.live.item_count"
+          ],
+          "id": "product.presentation.populated-data",
+          "max_points": 1.0,
+          "passed": true
+        },
+        {
+          "detail": "console_errors=1; navigation_errors=0",
+          "earned_points": 0.0,
+          "evidence_references": [
+            "visual:observations.live"
+          ],
+          "id": "product.presentation.clean-runtime",
+          "max_points": 1.0,
+          "passed": false
+        },
+        {
+          "detail": "hover/focus factor descriptions passed",
+          "earned_points": 3.0,
+          "evidence_references": [
+            "visual:ui.factor-descriptions"
+          ],
+          "id": "product.presentation.factor-descriptions",
+          "max_points": 3.0,
+          "passed": true
+        },
+        {
+          "detail": "priority hierarchy and selected state did not pass",
+          "earned_points": 0.0,
+          "evidence_references": [
+            "visual:ui.visual-hierarchy"
+          ],
+          "id": "product.presentation.visual-hierarchy",
+          "max_points": 2.0,
+          "passed": false
+        },
+        {
+          "detail": "distinct status styling passed",
+          "earned_points": 2.0,
+          "evidence_references": [
+            "visual:ui.status-styling"
+          ],
+          "id": "product.presentation.status-styling",
+          "max_points": 2.0,
+          "passed": true
+        }
+      ],
+      "earned_points": 8.0,
+      "id": "presentation_accessibility",
+      "label": "Presentation, hierarchy and accessibility",
+      "max_points": 15.0
+    },
+    {
+      "checks": [
+        {
+          "detail": "debug panel is hidden by default and visible when enabled",
+          "earned_points": 2.0,
+          "evidence_references": [
+            "visual:ui.debug-observability",
+            "visual:observations.debug"
+          ],
+          "id": "product.debug.toggle-panel",
+          "max_points": 2.0,
+          "passed": true
+        },
+        {
+          "detail": "debug panel enumerates required bound controls",
+          "earned_points": 3.0,
+          "evidence_references": [
+            "visual:ui.debug-observability",
+            "visual:observations.debug"
+          ],
+          "id": "product.debug.bound-controls",
+          "max_points": 3.0,
+          "passed": true
+        },
+        {
+          "detail": "debug panel exposes source/request status/count and loaded item count",
+          "earned_points": 3.0,
+          "evidence_references": [
+            "visual:ui.debug-observability",
+            "visual:observations.debug"
+          ],
+          "id": "product.debug.data-request",
+          "max_points": 3.0,
+          "passed": true
+        },
+        {
+          "detail": "debug panel updates live state/errors without changing product results",
+          "earned_points": 2.0,
+          "evidence_references": [
+            "visual:ui.debug-observability",
+            "visual:observations.debug"
+          ],
+          "id": "product.debug.state-errors",
+          "max_points": 2.0,
+          "passed": true
+        }
+      ],
+      "earned_points": 10.0,
+      "id": "debug_observability",
+      "label": "Debug and runtime observability",
+      "max_points": 10.0
+    },
+    {
+      "checks": [
+        {
+          "detail": "scaled robustness score 10/10",
+          "earned_points": 5.0,
+          "evidence_references": [
+            "machine:robustness"
+          ],
+          "id": "product.robustness.scaled",
+          "max_points": 5.0,
+          "passed": true
+        }
+      ],
+      "earned_points": 5.0,
+      "id": "robustness_failure_handling",
+      "label": "Robustness/failure handling",
+      "max_points": 5.0
+    },
+    {
+      "checks": [
+        {
+          "detail": "scaled scope+engineering score 16/20",
+          "earned_points": 4.0,
+          "evidence_references": [
+            "machine:scope_completeness",
+            "machine:engineering_quality"
+          ],
+          "id": "product.engineering.scope-quality-scaled",
+          "max_points": 5.0,
+          "passed": false
+        }
+      ],
+      "earned_points": 4.0,
+      "id": "engineering_completeness_traceability",
+      "label": "Engineering completeness/traceability",
+      "max_points": 5.0
+    }
+  ],
+  "error": null,
+  "id": "end-to-end-product/v2",
+  "limitations": [
+    "This score is supplementary and does not replace machine_score.",
+    "This score does not contribute to composite or winner policy.",
+    "BM5 uses end-to-end-product/v2; do not compare its absolute product score directly to the BM4 v1 product score without accounting for the stricter task/rubric."
+  ],
+  "maximum_score": 100,
+  "role": "supplementary",
+  "schema": "agent-workflow/benchmark-supplementary-score/v1",
+  "score": 79.5,
+  "scorer_version": "2.0.0",
+  "state": "scored",
+  "winner_interaction": "none"
+}

@@ -1,0 +1,202 @@
+{
+  "audit_records": 3,
+  "contexts": [
+    {
+      "applied": {
+        "enforced_selection": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        },
+        "recommendation": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        }
+      },
+      "counterfactual_candidate": {
+        "enforced_selection": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        },
+        "explanation_codes": [
+          "INTERACTION_NOT_REQUIRED",
+          "TASK_IMPLEMENTATION"
+        ],
+        "policy_disagreements": [],
+        "recommendation": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        },
+        "schema": "agent-workflow/routing-advice/v1"
+      },
+      "decision_timing": {
+        "applied_policy_seconds": 5.856598727405071e-05,
+        "candidate_policy_seconds": 2.8830021619796753e-05,
+        "control_seconds": 2.3894943296909332e-05,
+        "provider_elapsed_seconds": 0.3665037138853222
+      },
+      "deterministic_control": {
+        "enforced_selection": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        },
+        "explanation_codes": [
+          "INTERACTION_NOT_REQUIRED",
+          "TASK_IMPLEMENTATION"
+        ],
+        "policy_disagreements": [],
+        "recommendation": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        },
+        "schema": "agent-workflow/routing-advice/v1"
+      },
+      "phase_id": "analyze-plan",
+      "phase_name": "Analyze and plan"
+    },
+    {
+      "applied": {
+        "enforced_selection": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        },
+        "recommendation": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        }
+      },
+      "counterfactual_candidate": {
+        "enforced_selection": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        },
+        "explanation_codes": [
+          "INTERACTION_NOT_REQUIRED",
+          "TASK_IMPLEMENTATION"
+        ],
+        "policy_disagreements": [],
+        "recommendation": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        },
+        "schema": "agent-workflow/routing-advice/v1"
+      },
+      "decision_timing": {
+        "applied_policy_seconds": 4.009203985333443e-05,
+        "candidate_policy_seconds": 2.3739179596304893e-05,
+        "control_seconds": 2.7034897357225418e-05,
+        "provider_elapsed_seconds": 0.20042223809286952
+      },
+      "deterministic_control": {
+        "enforced_selection": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        },
+        "explanation_codes": [
+          "INTERACTION_NOT_REQUIRED",
+          "TASK_IMPLEMENTATION"
+        ],
+        "policy_disagreements": [],
+        "recommendation": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        },
+        "schema": "agent-workflow/routing-advice/v1"
+      },
+      "phase_id": "implement",
+      "phase_name": "Implement"
+    },
+    {
+      "applied": {
+        "enforced_selection": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        },
+        "recommendation": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        }
+      },
+      "counterfactual_candidate": {
+        "enforced_selection": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        },
+        "explanation_codes": [
+          "INTERACTION_NOT_REQUIRED",
+          "TASK_IMPLEMENTATION"
+        ],
+        "policy_disagreements": [],
+        "recommendation": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        },
+        "schema": "agent-workflow/routing-advice/v1"
+      },
+      "decision_timing": {
+        "applied_policy_seconds": 2.949405461549759e-05,
+        "candidate_policy_seconds": 1.8669990822672844e-05,
+        "control_seconds": 2.5573885068297386e-05,
+        "provider_elapsed_seconds": 0.19827401591464877
+      },
+      "deterministic_control": {
+        "enforced_selection": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        },
+        "explanation_codes": [
+          "INTERACTION_NOT_REQUIRED",
+          "TASK_IMPLEMENTATION"
+        ],
+        "policy_disagreements": [],
+        "recommendation": {
+          "agent_class": "implementation",
+          "executor": "codex",
+          "interactive": false,
+          "model": "gpt-6-luna"
+        },
+        "schema": "agent-workflow/routing-advice/v1"
+      },
+      "phase_id": "verify-repair",
+      "phase_name": "Verify and repair"
+    }
+  ],
+  "qualification_calls": 3,
+  "raw_audit_published": false,
+  "raw_audit_sha256": "e9e6e43e843bf5b23caa66f0d88586dc4236e342148a3d533c3a804f619703fb",
+  "schema": "agent-workflow/bm5-typesafe-public-summary/v1",
+  "treatment_includes_semantic_routing": false
+}
