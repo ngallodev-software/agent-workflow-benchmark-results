@@ -1,8 +1,20 @@
 # Agent-Workflow Benchmark Results
 
-Public, reproducible benchmark results for [Agent-Workflow](https://github.com/ngallodev-software/agent-workflow).
+![Evidence](https://img.shields.io/badge/evidence-public%20and%20sanitized-blue)
+![Studies](https://img.shields.io/badge/published-BM3%E2%80%93BM5-2ea44f)
+![License](https://img.shields.io/badge/license-Apache--2.0-green)
 
-This repository stores **results and finished software**, not the benchmark harness itself. The harness lives in [agent-workflow-benchmark](https://github.com/ngallodev-software/agent-workflow-benchmark).
+Public benchmark evidence and finished software for
+[Agent-Workflow](https://github.com/ngallodev-software/agent-workflow).
+
+This repository stores **results and finished software**, not the benchmark
+harness itself. The harness and scoring implementation live in
+[agent-workflow-benchmark](https://github.com/ngallodev-software/agent-workflow-benchmark).
+
+Read these results as inspectable development evidence, not as a leaderboard.
+The repository publishes treatment identity, sample size, eligibility, scoring
+evidence, timing/token measurements, finished outputs, and known limitations so
+individual claims can be checked against the underlying artifacts.
 
 ## Purpose
 
