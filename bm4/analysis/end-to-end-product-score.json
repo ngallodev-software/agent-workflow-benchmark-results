@@ -1,0 +1,67 @@
+{
+  "schema": "agent-workflow/bm4-supplementary-product-score/v1",
+  "status": "post-hoc-supplementary-non-official",
+  "official_machine_score": {
+    "structured_direct": 79.5,
+    "agent_workflow_optimized": 86,
+    "difference": 6.5
+  },
+  "supplementary_product_score": {
+    "structured_direct": 49,
+    "agent_workflow_optimized": 79,
+    "difference": 30
+  },
+  "dimensions": [
+    {
+      "id": "core-data-layer",
+      "max_points": 30,
+      "structured_direct": 24,
+      "agent_workflow_optimized": 26
+    },
+    {
+      "id": "end-to-end-data-integration",
+      "max_points": 20,
+      "structured_direct": 5,
+      "agent_workflow_optimized": 20
+    },
+    {
+      "id": "required-interactions",
+      "max_points": 20,
+      "structured_direct": 0,
+      "agent_workflow_optimized": 5
+    },
+    {
+      "id": "presentation-accessibility",
+      "max_points": 15,
+      "structured_direct": 7,
+      "agent_workflow_optimized": 14
+    },
+    {
+      "id": "robustness",
+      "max_points": 5,
+      "structured_direct": 5,
+      "agent_workflow_optimized": 5
+    },
+    {
+      "id": "engineering-completeness",
+      "max_points": 10,
+      "structured_direct": 8,
+      "agent_workflow_optimized": 9
+    }
+  ],
+  "key_facts": {
+    "structured_direct_server_loads_fixture": true,
+    "structured_direct_browser_item_count": 0,
+    "agent_workflow_optimized_browser_item_count": 6,
+    "official_ui_weight_points": 10,
+    "official_python_library_weight_points": 70,
+    "scoring_question": "end-to-end delivered product completeness",
+    "no_model_rerun": true,
+    "no_implementation_change": true
+  },
+  "limitations": [
+    "Defined after observing frozen BM4 evidence.",
+    "Does not replace or alter the official BM4 machine score.",
+    "Intended for transparent product-completeness interpretation and future rubric design."
+  ]
+}
