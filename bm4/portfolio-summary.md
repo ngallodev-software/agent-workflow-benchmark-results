@@ -55,3 +55,26 @@ The portfolio can link directly to:
 - `bm4/PUBLICATION-MANIFEST.json` — original generated 62-file evidence-package integrity manifest.
 
 The raw TypeSafe API audit and complete evidence archive should remain private. The public TypeSafe qualification summary is sufficient for portfolio evidence.
+
+
+## Supplementary end-to-end product score
+
+The official frozen BM4 score is intentionally retained as the primary benchmark score: **79.5 structured direct vs 86.0 Agent-Workflow optimized**.
+
+A separate post-hoc product-completeness rubric was added after reviewing how the official 100-point contract distributes weight. The official contract assigns 70 points to Python/library correctness and robustness but only 10 points to the live browser UI. That means the structured-direct implementation can retain a relatively high official score even though its browser application renders zero backlog items.
+
+Using only evidence already captured during BM4, the supplementary rubric scores:
+
+- structured direct: **49 / 100**
+- Agent-Workflow optimized: **79 / 100**
+- supplementary difference: **+30 points**
+
+The wider difference is primarily end-to-end integration, not a claim that the direct implementation never loads the JSON. Both implementations' Python/server paths load and validate the supplied fixture. The direct failure occurs in the browser integration path: JavaScript errors prevent any priority items from rendering. As a result, the populated data presentation cannot be meaningfully evaluated for that arm.
+
+The supplementary 49/79 score is **not** the official BM4 machine score and must always be labeled post-hoc. It exists to make product completeness legible and to inform a better pre-registered rubric for future benchmark rounds.
+
+See:
+
+- `analysis/official-scoring-matrix.md`
+- `analysis/end-to-end-product-rubric.md`
+- `analysis/end-to-end-product-score.json`
