@@ -10,6 +10,8 @@ Because BM3 used `gpt-5.6-luna`, BM3 and BM4 are different model cohorts. BM3 re
 
 The objective is not merely to reduce token count. It is to reduce **waste** while preserving or improving the finished software, deterministic correctness, durable evidence, lifecycle safety, and review/recovery behavior.
 
+See [optimization-ledger.md](optimization-ledger.md).
+
 ## Result at a glance
 
 | Metric | Structured direct | Agent-Workflow optimized | Candidate delta |
