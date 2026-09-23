@@ -43,3 +43,9 @@ Only about **18.9 seconds** of the 935.5-second wall-time delta is measured Agen
 The optimization target is therefore primarily the context/execution behavior induced by the workflow layer—replayed context, repeated state/instruction material, redundant verification/review work, and excess model-active turns—not Python bookkeeping alone.
 
 See `analysis/comparison.md` and `analysis/optimization-opportunities.md`.
+
+## TypeSafe/Jev qualification
+
+Before paired execution, the runner made three successful TypeSafe qualification calls, one for each phase context. Each call requested the three registered Agent-Workflow judgments: `Choice` task class, `Noul` interaction requirement, and `Score` semantic risk. In analyze-plan, TypeSafe selected `documentation` while deterministic control selected `implementation`; shadow policy retained the control value. All three risk scores used deterministic fallback because of semantic uncertainty. The qualification calls were not included in either paired treatment, so they do not explain the benchmark's quality, time, or token deltas.
+
+The public sanitized record is [typesafe-qualification-summary.json](evidence/typesafe-qualification-summary.json); raw request/response audit is not published. See the [Agent-Workflow integration description](https://github.com/ngallodev-software/agent-workflow#optional-bounded-semantic-decisions) and [Jev/System One](https://typesafe.ai/blog/introducing-system-one-models-and-jev).
