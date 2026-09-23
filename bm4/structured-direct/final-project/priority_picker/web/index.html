@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f6f8">
+  <title>Priority Picker · Backlog</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="shell" data-testid="priority-app">
+    <header class="masthead">
+      <div class="eyebrow"><span class="pulse"></span> BACKLOG INTELLIGENCE</div>
+      <div class="heading-row">
+        <div><h1>Priority Picker</h1><p class="lede">A clear view of what deserves attention next.</p></div>
+        <button class="export-button" type="button" data-testid="export-button" disabled>↓ <span>Export ordering</span></button>
+      </div>
+      <section class="summary" aria-label="Backlog summary">
+        <div><span class="summary-value" id="total-count">—</span><span class="summary-label">Total items</span></div>
+        <div><span class="summary-value" id="ready-count">—</span><span class="summary-label">Ready to start</span></div>
+        <div><span class="summary-value" id="blocked-count">—</span><span class="summary-label">Blocked</span></div>
+        <div><span class="summary-value" id="visible-count">—</span><span class="summary-label">Showing</span></div>
+      </section>
+    </header>
+
+    <section class="workspace" aria-label="Ranked backlog">
+      <div class="toolbar">
+        <div class="search-wrap"><label for="search-input">Search backlog</label><input id="search-input" data-testid="search-input" type="search" placeholder="Search titles or descriptions…" autocomplete="off"></div>
+        <div><label for="status-filter">Status</label><select id="status-filter" data-testid="status-filter"><option value="all">All statuses</option><option value="planned">Planned</option><option value="ready">Ready</option><option value="in_progress">In progress</option><option value="blocked">Blocked</option></select></div>
+        <div><label for="risk-filter">Risk</label><select id="risk-filter" data-testid="risk-filter"><option value="all">Any risk</option><option value="1">1 · Low</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5 · High</option></select></div>
+        <div><label for="sort-control">Sort by</label><select id="sort-control" data-testid="sort-control"><option value="priority-desc">Priority · highest first</option><option value="priority-asc">Priority · lowest first</option><option value="urgency-desc">Urgency · highest first</option><option value="impact-desc">Impact · highest first</option><option value="effort-asc">Effort · lowest first</option><option value="title-asc">Title · A to Z</option></select></div>
+      </div>
+      <div class="list-heading"><h2>Ranked items</h2><span id="order-note">Ordered by priority score</span></div>
+      <div id="message" class="message" role="status" hidden></div>
+      <div class="priority-list" data-testid="priority-list" id="priority-list" aria-live="polite"></div>
+      <div id="empty-state" class="empty-state" hidden><div class="empty-icon">⌕</div><h3>No matching items</h3><p>Try changing your search or filters.</p></div>
+    </section>
+    <footer>Scores use impact, urgency, confidence, and risk relative to effort.</footer>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>

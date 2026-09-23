@@ -1,0 +1,38 @@
+{
+  "receipts": {
+    "consolidation-receipt.json": {
+      "published_raw": false,
+      "sha256": "b4ee7ec8622abb4eb2d9a02351c12e984fc1a06318195c9b9d5926835a7be493"
+    },
+    "environment.json": {
+      "published_raw": false,
+      "sha256": "b2cf91532024cabad00338846b30485564aeb11bb066906b1ea31feed44b08d5"
+    },
+    "experiment-manifest.json": {
+      "published_raw": false,
+      "sha256": "07ae6ebf5dc49693008714215f18add6cd9003b57ca3480dba1e497878569bf2"
+    },
+    "machine-scores.json": {
+      "published_raw": false,
+      "sha256": "b79a6e6704a464c98261238744d66e8c01bf02dd810fc9ed3ed2699594414514"
+    },
+    "operating-policy.json": {
+      "published_raw": false,
+      "sha256": "b2379c46c51a6227295181e076201eb8f09007f450c55adbd29ad6cb98df025c"
+    },
+    "report.json": {
+      "published_raw": false,
+      "sha256": "2b41256480d3a1ca3a36aa9e90d4915e4497072da9dbb0de30c0d1a4f90f3c42"
+    },
+    "report.md": {
+      "published_raw": false,
+      "sha256": "663c837a3f2132d42f4cec195a0443402b98644ecd22272f1caa5308f1a41e48"
+    },
+    "run-plan.json": {
+      "published_raw": false,
+      "sha256": "65e6bb324743f1a22647c5f8080df1b8e23dd9f38a35e4ce396645375c35fd92"
+    }
+  },
+  "run_id": "priority-picker-v2-20260922T231715Z-cdc01f",
+  "schema": "agent-workflow/bm4-private-receipt-hashes/v1"
+}

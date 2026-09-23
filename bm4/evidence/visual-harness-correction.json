@@ -1,0 +1,11 @@
+{
+  "benchmark_id": "priority-picker-v2",
+  "claim_level": "development",
+  "frozen_evaluator_sha256": "f2d3c59ccac11a815535bb1c01ed92e44d2a7c9f5953c72f5980a73908192d9e",
+  "model_execution_modified": false,
+  "reason": "Correct the documented Priority Picker visual evaluator defect where solution/UI failures were escalated to harness failures and the UI sort check required an undocumented hard-coded title option.",
+  "replacement_evaluator_sha256": "6daa7457a1d76aed587f32fe1c50b0643031d484a95ef2c073e931d37384eb9b",
+  "run_id": "priority-picker-v2-20260922T231715Z-cdc01f",
+  "schema": "agent-workflow/benchmark-harness-substitution/v1",
+  "scope": "visual-capture-only"
+}

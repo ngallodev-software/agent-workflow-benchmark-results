@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7f8">
+  <title>Priority Picker — Backlog</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="shell" data-testid="priority-app">
+    <header class="topbar"><a class="brand" href="/" aria-label="Priority Picker home"><span class="brand-icon">P</span> Priority Picker</a><span class="live"><i></i> Backlog overview</span></header>
+    <section class="intro">
+      <p class="eyebrow">DECISION SUPPORT · PRIORITIZED WORK</p>
+      <h1>Make the next move clear.</h1>
+      <p class="lede">A focused view of the work with the greatest impact, urgency, and confidence.</p>
+    </section>
+    <section class="summary" aria-label="Backlog summary">
+      <article class="summary-card total"><span>Total items</span><strong id="count-total">—</strong><small>in this backlog</small></article>
+      <article class="summary-card"><span>Ready</span><strong id="count-ready">—</strong><small>ready to start</small></article>
+      <article class="summary-card"><span>In progress</span><strong id="count-progress">—</strong><small>underway</small></article>
+      <article class="summary-card"><span>Blocked</span><strong id="count-blocked">—</strong><small>need attention</small></article>
+    </section>
+    <section class="work" aria-labelledby="list-heading">
+      <div class="section-head"><div><p class="eyebrow">YOUR QUEUE</p><h2 id="list-heading">Prioritized backlog</h2></div><button class="export" type="button" data-testid="export-button" disabled><span aria-hidden="true">↓</span> Export JSON</button></div>
+      <div class="toolbar">
+        <label class="search-label">Search backlog<input type="search" data-testid="search-input" id="search-input" placeholder="Search titles or details…"></label>
+        <label>Status<select data-testid="status-filter" id="status-filter"><option value="all">All statuses</option><option value="planned">Planned</option><option value="ready">Ready</option><option value="in_progress">In progress</option><option value="blocked">Blocked</option></select></label>
+        <label>Risk<select data-testid="risk-filter" id="risk-filter"><option value="all">All levels</option><option value="1">Low · 1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">High · 5</option></select></label>
+        <label>Sort by<select data-testid="sort-control" id="sort-control"><option value="priority-desc">Priority · highest</option><option value="priority-asc">Priority · lowest</option><option value="urgency-desc">Urgency · highest</option><option value="impact-desc">Impact · highest</option><option value="effort-asc">Effort · smallest</option><option value="title-asc">Title · A to Z</option></select></label>
+      </div>
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+      <div class="list" data-testid="priority-list" id="priority-list" aria-live="polite"></div>
+      <div class="message" id="message" role="status" hidden></div>
+    </section>
+    <footer><span>Priority Picker</span><span>Scores use a consistent, transparent formula.</span></footer>
+  </main>
+  <script src="/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+{
+  "benchmark_id": "priority-picker-v2",
+  "benchmark_version": "2.0.0",
+  "claim_level": "development",
+  "deltas_candidate_minus_control": {
+    "cached_input_tokens": 2594816.0,
+    "executor_active_seconds": 374.726713,
+    "host_overhead_seconds": 53.940731,
+    "input_tokens": 2616168.0,
+    "machine_score": 6.5,
+    "output_tokens": 14489.0,
+    "provider_total_tokens": 2630657.0,
+    "reasoning_output_tokens": 8281.0,
+    "wall_seconds": 428.667444
+  },
+  "eligible_pairs": 1,
+  "execution_state": "executed",
+  "human_complete_pairs": 0,
+  "identity": {
+    "environment_sha256": "680bdf9b59fad12af2de20fe760222aa27794fdf10bd2273559aea5ab4814c22",
+    "fixture_sha256": "631a6db401f4bc89480d25aee4549d7416a141f06256abe9e50d89978aea403c",
+    "resource_policy_sha256": "2fe76c46cef8ed1917deefef0b951dbada8aa77c4f4200e96ed292398b893d49",
+    "spec_sha256": "2f8550d9a7828b8c95a36c3d8ff4b75859d864cee1ecd709f846e2ec3fd98170",
+    "suite_sha256": "53d69565f6189bcc7fe58ce65979d89cbe3a84207f4d567b17d402e771d0c870",
+    "task_prompt_sha256": "aeb436c39c62b4767d81938d547d3ae3ae71b0c2f65442d13f76ac1948b94b7d",
+    "tool_policy_sha256": "95c120ce06590701ffa953695c57da1ed995ad02d75050c5860d789a7905310e"
+  },
+  "limitations": [
+    "Single paired development run (n=1); descriptive only.",
+    "Human visual review may remain incomplete; no generalized winner claim is made.",
+    "Development visual-runtime verification is not publication-runtime verification.",
+    "Raw TypeSafe API audit records and the complete evidence archive are retained privately."
+  ],
+  "pair": {
+    "case_id": "standard-backlog",
+    "pair_id": "standard-backlog-r01",
+    "pair_start_skew_seconds": 9.4e-05,
+    "selected_attempt": 1
+  },
+  "private_evidence": {
+    "raw_archive_published": false,
+    "raw_archive_sha256": "94fda52c4f83022f351bd9b79610c8c742595881da283662abccb383f4d0f003",
+    "raw_typesafe_audit_published": false,
+    "typesafe_audit_sha256": "f65692dfddbb362710a541ab83229eb6f1ff5286d8dbdb168025c019f271b862"
+  },
+  "repetitions": 1,
+  "run_id": "priority-picker-v2-20260922T231715Z-cdc01f",
+  "schema": "agent-workflow/public-benchmark-result/v1",
+  "status": "awaiting_human_review",
+  "study_id": "bm4",
+  "treatments": {
+    "agent-workflow-optimized": {
+      "amplification": {
+        "command_execution_count": 77,
+        "injected_context_bytes": 5107,
+        "injected_context_estimated_tokens": 1277,
+        "launch_prompt_bytes": 19138,
+        "model_turn_count": 3,
+        "tool_call_count": 77
+      },
+      "arm": "workflow_full",
+      "cached_input_tokens": 3998208,
+      "eligibility": "eligible",
+      "executor_active_seconds": 1128.80022,
+      "final_project_path": "agent-workflow-optimized/final-project",
+      "host_overhead_seconds": 54.052949,
+      "input_tokens": 4258210,
+      "machine_score": 86.0,
+      "output_tokens": 50840,
+      "provider_total_tokens": 4309050,
+      "reasoning_output_tokens": 20723,
+      "runner_kind": "agent-workflow",
+      "treatment_id": "agent-workflow-optimized/v1",
+      "visual_path": "agent-workflow-optimized/visual",
+      "wall_seconds": 1182.853169
+    },
+    "structured-direct": {
+      "amplification": {
+        "command_execution_count": 42,
+        "injected_context_bytes": 0,
+        "injected_context_estimated_tokens": 0,
+        "launch_prompt_bytes": 14004,
+        "model_turn_count": 3,
+        "tool_call_count": 42
+      },
+      "arm": "control_raw",
+      "cached_input_tokens": 1403392,
+      "eligibility": "eligible",
+      "executor_active_seconds": 754.073507,
+      "final_project_path": "structured-direct/final-project",
+      "host_overhead_seconds": 0.112218,
+      "input_tokens": 1642042,
+      "machine_score": 79.5,
+      "output_tokens": 36351,
+      "provider_total_tokens": 1678393,
+      "reasoning_output_tokens": 12442,
+      "runner_kind": "direct-executor",
+      "treatment_id": "structured-direct/v1",
+      "visual_path": "structured-direct/visual",
+      "wall_seconds": 754.185725
+    }
+  },
+  "visual_harness_correction": true,
+  "winner": null
+}

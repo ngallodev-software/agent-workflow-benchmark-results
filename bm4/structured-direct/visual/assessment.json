@@ -1,0 +1,115 @@
+{
+  "capture_state": "complete",
+  "checks": [
+    {
+      "detail": "live URL loaded; playwright=1.60.0; browser=151.0.7922.173; app_count=1; item_count=0; errors=[\"pageerror:Cannot read properties of null (reading 'addEventListener')\", 'console:error:Failed to load resource: the server responded with a status of 404 (Not Found)', \"pageerror:Cannot read properties of null (reading 'addEventListener')\", \"pageerror:Cannot read properties of null (reading 'addEventListener')\"]; navigation_errors=[]",
+      "id": "ui.live-app",
+      "passed": false
+    },
+    {
+      "detail": "labels={'search-input': 0, 'status-filter': 0, 'risk-filter': 0, 'sort-control': 0}; main_count=1",
+      "id": "ui.labels-landmark",
+      "passed": false
+    },
+    {
+      "detail": "initial=0; search=[]; blocked=0; sort_options=['priority-desc', 'priority-asc', 'urgency-desc', 'impact-desc', 'effort-asc', 'title-asc']; selected=priority-asc; before=[]; after=[]",
+      "id": "ui.search-filter-sort",
+      "passed": false
+    },
+    {
+      "detail": "solution check failed: TimeoutError: Locator.focus: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-testid=\\\"priority-item\\\"]\").first\n",
+      "id": "ui.keyboard-detail",
+      "passed": false
+    },
+    {
+      "detail": "computed active-control style={'outlineStyle': 'solid', 'outlineWidth': '3px', 'boxShadow': 'none', 'borderColor': 'rgb(8, 126, 117)'}",
+      "id": "ui.visible-focus",
+      "passed": true
+    },
+    {
+      "detail": "no-overflow results=[True, True, True]; captured=3/3",
+      "id": "ui.responsive",
+      "passed": true
+    },
+    {
+      "detail": "solution check failed: TimeoutError: Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-testid=\\\"export-button\\\"]\")\n    - locator resolved to <button disabled type=\"button\" class=\"export-button\" data-testid=\"export-button\">\u2026</button>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not enabled\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not enabled\n    - retrying click action\n      - waiting 100ms\n    58 \u00d7 waiting for element to be visible, enabled and stable\n       - element is not enabled\n     - retrying click action\n       - waiting 500ms\n",
+      "id": "ui.download",
+      "passed": false
+    },
+    {
+      "detail": "empty_text=''; invalid_state=False",
+      "id": "ui.empty-invalid",
+      "passed": false
+    }
+  ],
+  "runtime": {
+    "browser_executable": "/usr/bin/chromium",
+    "browser_version": "151.0.7922.173",
+    "playwright_version": "1.60.0",
+    "runtime_match": true
+  },
+  "runtime_lock": {
+    "browser_executable_candidates": [
+      "/usr/bin/chromium",
+      "/usr/bin/chromium-browser",
+      "/usr/bin/google-chrome"
+    ],
+    "browser_product": "Chromium",
+    "browser_version": "151.0.7922.173",
+    "color_scheme": "light",
+    "container_image": null,
+    "device_scale_factor": 1,
+    "font_manifest": [
+      {
+        "family": "DejaVu Sans",
+        "resolved_file": "DejaVuSans.ttf"
+      }
+    ],
+    "locale": "en-US",
+    "playwright_version": "1.60.0",
+    "publication_blocker": "A content-addressed browser image and independently verified font manifest remain required before publication claims.",
+    "reduced_motion": "reduce",
+    "reproducibility_state": "local-pinned-development",
+    "schema": "agent-workflow/visual-runtime-lock/v1",
+    "timezone": "UTC",
+    "viewports": [
+      {
+        "height": 1000,
+        "id": "desktop",
+        "width": 1440
+      },
+      {
+        "height": 1112,
+        "id": "tablet",
+        "width": 834
+      },
+      {
+        "height": 844,
+        "id": "mobile",
+        "width": 390
+      }
+    ]
+  },
+  "schema": "agent-workflow/priority-picker-visual-assessment/v2",
+  "screenshots": [
+    {
+      "height": 1000,
+      "id": "desktop",
+      "path": "desktop.png",
+      "width": 1440
+    },
+    {
+      "height": 1112,
+      "id": "tablet",
+      "path": "tablet.png",
+      "width": 834
+    },
+    {
+      "height": 844,
+      "id": "mobile",
+      "path": "mobile.png",
+      "width": 390
+    }
+  ],
+  "url": "<local-live-url-redacted>"
+}

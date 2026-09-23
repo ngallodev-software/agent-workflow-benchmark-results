@@ -1,0 +1,36 @@
+{
+  "amplification": {
+    "command_execution_count": 77,
+    "injected_context_bytes": 5107,
+    "injected_context_estimated_tokens": 1277,
+    "launch_prompt_bytes": 19138,
+    "model_turn_count": 3,
+    "tool_call_count": 77
+  },
+  "executor_active_seconds": 1128.80022,
+  "host_overhead_seconds": 54.052949,
+  "phase_wall_seconds": 1182.853169,
+  "phases": [
+    {
+      "active_process_seconds": 122.237643,
+      "host_overhead_seconds": 17.322157,
+      "phase_id": "analyze-plan",
+      "phase_wall_seconds": 139.5598,
+      "runner_kind": "agent-workflow"
+    },
+    {
+      "active_process_seconds": 613.429801,
+      "host_overhead_seconds": 18.530435,
+      "phase_id": "implement",
+      "phase_wall_seconds": 631.960236,
+      "runner_kind": "agent-workflow"
+    },
+    {
+      "active_process_seconds": 393.132776,
+      "host_overhead_seconds": 18.200357,
+      "phase_id": "verify-repair",
+      "phase_wall_seconds": 411.333133,
+      "runner_kind": "agent-workflow"
+    }
+  ]
+}

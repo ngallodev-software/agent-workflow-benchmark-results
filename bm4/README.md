@@ -1,11 +1,30 @@
-# BM4 — Optimized Agent-Workflow
+# BM4 — Structured Direct vs Agent-Workflow Optimized
 
-**Status: planned.**
+**Status: development benchmark finalized; human visual review may remain pending.**
 
-BM4 is the post-BM3 optimization study.
+BM4 measures the same structured Priority Picker task after Agent-Workflow OPT-001 through OPT-007 context/execution optimizations.
 
-The control/task/model/scoring protocol should remain as close to BM3 as practical. The candidate changes should be limited to deliberate Agent-Workflow optimizations motivated by BM3 evidence.
+## Result at a glance
 
-The objective is not merely to reduce token count. It is to reduce **waste** while preserving or improving the finished software, deterministic correctness, durable evidence, lifecycle safety, and review/recovery behavior.
+| Metric | Structured direct | Agent-Workflow optimized | Candidate delta |
+| --- | ---: | ---: | ---: |
+| Machine score | 79.5 | 86.0 | 6.5 |
+| Task wall time (s) | 754.186 | 1,182.853 | 428.667 |
+| Executor active (s) | 754.074 | 1,128.800 | 374.727 |
+| Measured host overhead (s) | 0.112 | 54.053 | 53.941 |
+| Provider tokens | 1,678,393 | 4,309,050 | 2,630,657 |
+| Input tokens | 1,642,042 | 4,258,210 | 2,616,168 |
+| Cached input tokens | 1,403,392 | 3,998,208 | 2,594,816 |
+| Output tokens | 36,351 | 50,840 | 14,489 |
+| Reasoning output tokens | 12,442 | 20,723 | 8,281 |
 
-See [optimization-ledger.md](optimization-ledger.md).
+## Published artifacts
+
+- task/ — canonical task, prompts, scoring and visual contracts, runtime lock, and starting fixture;
+- structured-direct/ — control final project, score, timing, usage, and visual evidence;
+- agent-workflow-optimized/ — candidate final project, score, timing, usage, and visual evidence;
+- analysis/comparison.md — descriptive comparison;
+- evidence/ — sanitized TypeSafe summary, benchmark receipts, and visual-harness correction provenance when applicable;
+- methodology/ — environment and treatment definition.
+
+Raw TypeSafe audit records and the full evidence archive are intentionally not published. Their hashes are recorded in result.json.

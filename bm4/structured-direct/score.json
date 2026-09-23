@@ -1,0 +1,564 @@
+{
+  "arm": "control_raw",
+  "benchmark_id": "priority-picker-v2",
+  "benchmark_version": "2.0.0",
+  "case_id": "standard-backlog",
+  "components": [
+    {
+      "checks": [
+        {
+          "detail": "integer formula equals 10.0",
+          "earned_points": 4.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.formula.integer",
+          "id": "hidden.formula.integer",
+          "max_points": 4.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "decimal formula is rounded to four places",
+          "earned_points": 4.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.formula.decimal-rounding",
+          "id": "hidden.formula.decimal-rounding",
+          "max_points": 4.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "calculate_priority floors effort at one: BacklogValidationError: item must include numeric impact, urgency, effort, confidence, and risk",
+          "earned_points": 0.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.formula.effort-floor",
+          "id": "hidden.formula.effort-floor",
+          "max_points": 3.0,
+          "partial_credit": "none",
+          "passed": false
+        },
+        {
+          "detail": "score descending is primary",
+          "earned_points": 3.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.tie.score",
+          "id": "hidden.tie.score",
+          "max_points": 3.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "equal scores use urgency descending",
+          "earned_points": 3.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.tie.urgency",
+          "id": "hidden.tie.urgency",
+          "max_points": 3.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "equal score/urgency uses impact descending",
+          "earned_points": 3.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.tie.impact",
+          "id": "hidden.tie.impact",
+          "max_points": 3.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "final tie uses ID ascending",
+          "earned_points": 3.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.tie.id",
+          "id": "hidden.tie.id",
+          "max_points": 3.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "ranked records expose scores without mutating input",
+          "earned_points": 0.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.ranked-schema",
+          "id": "hidden.ranked-schema",
+          "max_points": 3.0,
+          "partial_credit": "none",
+          "passed": false
+        },
+        {
+          "detail": "title search is case-insensitive",
+          "earned_points": 2.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.search.title",
+          "id": "hidden.search.title",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "description search is case-insensitive",
+          "earned_points": 2.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.search.description",
+          "id": "hidden.search.description",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "query/status/risk compose",
+          "earned_points": 3.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.filters.combined",
+          "id": "hidden.filters.combined",
+          "max_points": 3.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "supported keys and directions sort deterministically",
+          "earned_points": 3.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.sort.supported",
+          "id": "hidden.sort.supported",
+          "max_points": 3.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "invalid sort key/direction rejected",
+          "earned_points": 2.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.sort.invalid",
+          "id": "hidden.sort.invalid",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "export contains deterministic order and ranks",
+          "earned_points": 0.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.export",
+          "id": "hidden.export",
+          "max_points": 3.0,
+          "partial_credit": "none",
+          "passed": false
+        },
+        {
+          "detail": "supplied fixture loads and validates",
+          "earned_points": 2.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.load",
+          "id": "hidden.load",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "repeatable operations do not mutate caller data",
+          "earned_points": 2.0,
+          "evidence_reference": "evaluation:evaluate.py#hidden.determinism",
+          "id": "hidden.determinism",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        }
+      ],
+      "details": [
+        "13/16 contracted checks passed"
+      ],
+      "dimension": "hidden_functional",
+      "duration_seconds": 0.075206,
+      "earned_points": 36.0,
+      "id": "hidden-functional-v2",
+      "max_points": 45.0,
+      "result_sha256": "94a837a84ab564165fc044fb96856d105f950bad5689f4b09dc6e6ea945d49dc",
+      "state": "partial"
+    },
+    {
+      "checks": [
+        {
+          "detail": "test_frozen_formula (__main__.PriorityTests.test_frozen_formula) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+          "earned_points": 3.0,
+          "evidence_reference": "public:test_priority.py#test_frozen_formula",
+          "id": "public.formula",
+          "max_points": 3.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "test_ranking_uses_frozen_tie_breakers (__main__.PriorityTests.test_ranking_uses_frozen_tie_breakers) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+          "earned_points": 3.0,
+          "evidence_reference": "public:test_priority.py#test_ranking_uses_frozen_tie_breakers",
+          "id": "public.ranking",
+          "max_points": 3.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "test_malformed_range_is_rejected (__main__.PriorityTests.test_malformed_range_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+          "earned_points": 3.0,
+          "evidence_reference": "public:test_priority.py#test_malformed_range_is_rejected",
+          "id": "public.validation",
+          "max_points": 3.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "test_filter_and_sort (__main__.PriorityTests.test_filter_and_sort) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.000s\n\nOK\n",
+          "earned_points": 3.0,
+          "evidence_reference": "public:test_priority.py#test_filter_and_sort",
+          "id": "public.filter-sort",
+          "max_points": 3.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "test_export_and_server_contract (__main__.PriorityTests.test_export_and_server_contract) ... ok\n\n----------------------------------------------------------------------\nRan 1 test in 0.007s\n\nOK\n",
+          "earned_points": 3.0,
+          "evidence_reference": "public:test_priority.py#test_export_and_server_contract",
+          "id": "public.export-server",
+          "max_points": 3.0,
+          "partial_credit": "none",
+          "passed": true
+        }
+      ],
+      "details": [
+        "5/5 contracted checks passed"
+      ],
+      "dimension": "public_regression",
+      "duration_seconds": 0.693469,
+      "earned_points": 15.0,
+      "id": "public-regression-v2",
+      "max_points": 15.0,
+      "result_sha256": "167d503c7d0aa686a52460096c1490aebfb327ce38ead81c2a2bd095c029389f",
+      "state": "pass"
+    },
+    {
+      "checks": [
+        {
+          "detail": "missing fields rejected",
+          "earned_points": 2.0,
+          "evidence_reference": "evaluation:evaluate.py#robust.required-fields",
+          "id": "robust.required-fields",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "types/ranges/statuses/booleans rejected",
+          "earned_points": 2.0,
+          "evidence_reference": "evaluation:evaluate.py#robust.types-ranges-status",
+          "id": "robust.types-ranges-status",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "empty accepted and duplicates rejected",
+          "earned_points": 2.0,
+          "evidence_reference": "evaluation:evaluate.py#robust.empty-duplicate",
+          "id": "robust.empty-duplicate",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "malformed roots and JSON rejected usefully",
+          "earned_points": 2.0,
+          "evidence_reference": "evaluation:evaluate.py#robust.malformed-load",
+          "id": "robust.malformed-load",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "one thousand items rank within two seconds",
+          "earned_points": 2.0,
+          "evidence_reference": "evaluation:evaluate.py#robust.scale",
+          "id": "robust.scale",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        }
+      ],
+      "details": [
+        "5/5 contracted checks passed"
+      ],
+      "dimension": "robustness",
+      "duration_seconds": 0.089209,
+      "earned_points": 10.0,
+      "id": "robustness-v2",
+      "max_points": 10.0,
+      "result_sha256": "e1db2041a13726e2b78d8cb3ced931b8468811b5af292e083ab8ad957d95ee30",
+      "state": "pass"
+    },
+    {
+      "checks": [
+        {
+          "detail": "live URL loaded; playwright=1.60.0; browser=151.0.7922.173; app_count=1; item_count=0; errors=[\"pageerror:Cannot read properties of null (reading 'addEventListener')\", 'console:error:Failed to load resource: the server responded with a status of 404 (Not Found)', \"pageerror:Cannot read properties of null (reading 'addEventListener')\", \"pageerror:Cannot read properties of null (reading 'addEventListener')\"]; navigation_errors=[]",
+          "earned_points": 0.0,
+          "evidence_reference": "visual:assessment.json#ui.live-app",
+          "id": "ui.live-app",
+          "max_points": 1.0,
+          "partial_credit": "none",
+          "passed": false
+        },
+        {
+          "detail": "labels={'search-input': 0, 'status-filter': 0, 'risk-filter': 0, 'sort-control': 0}; main_count=1",
+          "earned_points": 0.0,
+          "evidence_reference": "visual:assessment.json#ui.labels-landmark",
+          "id": "ui.labels-landmark",
+          "max_points": 1.5,
+          "partial_credit": "none",
+          "passed": false
+        },
+        {
+          "detail": "initial=0; search=[]; blocked=0; sort_options=['priority-desc', 'priority-asc', 'urgency-desc', 'impact-desc', 'effort-asc', 'title-asc']; selected=priority-asc; before=[]; after=[]",
+          "earned_points": 0.0,
+          "evidence_reference": "visual:assessment.json#ui.search-filter-sort",
+          "id": "ui.search-filter-sort",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": false
+        },
+        {
+          "detail": "solution check failed: TimeoutError: Locator.focus: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-testid=\\\"priority-item\\\"]\").first\n",
+          "earned_points": 0.0,
+          "evidence_reference": "visual:assessment.json#ui.keyboard-detail",
+          "id": "ui.keyboard-detail",
+          "max_points": 1.0,
+          "partial_credit": "none",
+          "passed": false
+        },
+        {
+          "detail": "computed active-control style={'outlineStyle': 'solid', 'outlineWidth': '3px', 'boxShadow': 'none', 'borderColor': 'rgb(8, 126, 117)'}",
+          "earned_points": 1.0,
+          "evidence_reference": "visual:assessment.json#ui.visible-focus",
+          "id": "ui.visible-focus",
+          "max_points": 1.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "no-overflow results=[True, True, True]; captured=3/3",
+          "earned_points": 1.5,
+          "evidence_reference": "visual:assessment.json#ui.responsive",
+          "id": "ui.responsive",
+          "max_points": 1.5,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "solution check failed: TimeoutError: Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-testid=\\\"export-button\\\"]\")\n    - locator resolved to <button disabled type=\"button\" class=\"export-button\" data-testid=\"export-button\">\u2026</button>\n  - attempting click action\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not enabled\n    - retrying click action\n    - waiting 20ms\n    2 \u00d7 waiting for element to be visible, enabled and stable\n      - element is not enabled\n    - retrying click action\n      - waiting 100ms\n    58 \u00d7 waiting for element to be visible, enabled and stable\n       - element is not enabled\n     - retrying click action\n       - waiting 500ms\n",
+          "earned_points": 0.0,
+          "evidence_reference": "visual:assessment.json#ui.download",
+          "id": "ui.download",
+          "max_points": 1.5,
+          "partial_credit": "none",
+          "passed": false
+        },
+        {
+          "detail": "empty_text=''; invalid_state=False",
+          "earned_points": 0.0,
+          "evidence_reference": "visual:assessment.json#ui.empty-invalid",
+          "id": "ui.empty-invalid",
+          "max_points": 0.5,
+          "partial_credit": "none",
+          "passed": false
+        }
+      ],
+      "details": [
+        "2/8 contracted checks passed"
+      ],
+      "dimension": "accessibility_ui",
+      "duration_seconds": 0.080959,
+      "earned_points": 2.5,
+      "id": "accessibility-ui-v2",
+      "max_points": 10.0,
+      "result_sha256": "8c3010c5f869bc6574c95ba654476336724e17e881370d71789506fa1d803a4a",
+      "state": "partial"
+    },
+    {
+      "checks": [
+        {
+          "detail": "required Python and web files exist",
+          "earned_points": 2.0,
+          "evidence_reference": "filesystem:required-files",
+          "id": "scope.required-files",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "phase plan retained",
+          "earned_points": 2.0,
+          "evidence_reference": "filesystem:BENCHMARK_PLAN.md",
+          "id": "scope.plan",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "README documents scoring, operation and tests",
+          "earned_points": 2.0,
+          "evidence_reference": "filesystem:README.md",
+          "id": "scope.readme",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "supplied fixture retained",
+          "earned_points": 2.0,
+          "evidence_reference": "filesystem:data/backlog.json",
+          "id": "scope.immutable-input",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "no external dependency surface",
+          "earned_points": 2.0,
+          "evidence_reference": "filesystem:dependency-scan",
+          "id": "scope.no-dependencies",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        }
+      ],
+      "details": [
+        "5/5 contracted checks passed"
+      ],
+      "dimension": "scope_completeness",
+      "duration_seconds": 0.131554,
+      "earned_points": 10.0,
+      "id": "scope-completeness-v2",
+      "max_points": 10.0,
+      "result_sha256": "cdd7703925fc51c99ef384227b0068ed9a6895adcd02453da1c457ea4383a612",
+      "state": "pass"
+    },
+    {
+      "checks": [
+        {
+          "detail": "",
+          "earned_points": 2.0,
+          "evidence_reference": "process:compileall",
+          "id": "quality.compile",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "no implementation stubs remain",
+          "earned_points": 2.0,
+          "evidence_reference": "source:stub-scan",
+          "id": "quality.no-stubs",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        },
+        {
+          "detail": "formula and tie breakers documented",
+          "earned_points": 0.0,
+          "evidence_reference": "filesystem:README.md#formula",
+          "id": "quality.formula-doc",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": false
+        },
+        {
+          "detail": "plan records verification and non-targets",
+          "earned_points": 0.0,
+          "evidence_reference": "filesystem:BENCHMARK_PLAN.md#verification",
+          "id": "quality.verification-plan",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": false
+        },
+        {
+          "detail": "implementation remains bounded and has no undeclared network client",
+          "earned_points": 2.0,
+          "evidence_reference": "source:determinism-scan",
+          "id": "quality.deterministic-design",
+          "max_points": 2.0,
+          "partial_credit": "none",
+          "passed": true
+        }
+      ],
+      "details": [
+        "3/5 contracted checks passed"
+      ],
+      "dimension": "engineering_quality",
+      "duration_seconds": 0.136965,
+      "earned_points": 6.0,
+      "id": "engineering-quality-v2",
+      "max_points": 10.0,
+      "result_sha256": "3a050402ba0c89f4d96353bf8c294ebec08862bd42b7887df201494456ed301c",
+      "state": "partial"
+    }
+  ],
+  "eligibility": {
+    "guardrails": [
+      {
+        "detail": "canonical task, fixture, base revision, and environment are pair-bound",
+        "id": "paired_identity",
+        "required": true,
+        "state": "pass"
+      },
+      {
+        "detail": "treatment=structured-direct/v1; other=agent-workflow-optimized/v1; runner=direct-executor",
+        "id": "declared_treatment",
+        "required": true,
+        "state": "pass"
+      },
+      {
+        "detail": "observed 0.000094s; limit 0.250000s",
+        "id": "start_skew",
+        "required": true,
+        "state": "pass"
+      },
+      {
+        "detail": "no out-of-scope writes",
+        "id": "writable_scope",
+        "required": true,
+        "state": "pass"
+      },
+      {
+        "detail": "adapter=codex-workspace-write; verified=False",
+        "id": "sandbox_isolation",
+        "required": false,
+        "state": "not_verified"
+      },
+      {
+        "detail": "cohort=unassisted; assistance=none",
+        "id": "assistance_cohort",
+        "required": true,
+        "state": "pass"
+      },
+      {
+        "detail": "visual capture state=complete; runtime_state=development-verified",
+        "id": "visual_capture",
+        "required": true,
+        "state": "pass"
+      },
+      {
+        "detail": "usage complete=True",
+        "id": "provider_usage",
+        "required": true,
+        "state": "pass"
+      },
+      {
+        "detail": "arm terminal state=completed",
+        "id": "harness_integrity",
+        "required": true,
+        "state": "pass"
+      }
+    ],
+    "publication_eligible": false,
+    "required_failures": [],
+    "scorer_harness_failures": [],
+    "state": "eligible"
+  },
+  "machine_score": 79.5,
+  "maximum_score": 100.0,
+  "pair_id": "standard-backlog-r01",
+  "repetition": 1,
+  "run_id": "priority-picker-v2-20260922T231715Z-cdc01f",
+  "schema": "agent-workflow/benchmark-machine-score/v2",
+  "scored_at": "2026-09-23T03:36:49.883141+00:00",
+  "scoring_identity": {
+    "evaluator_sha256": "4e17f2ba383aca45244c788f23cf3224892f804267c024b80ea16431fa4ad3a3",
+    "evaluator_version": "2.0.0",
+    "scorer_version": "2.0.0",
+    "scoring_contract_sha256": "21b81d41df79c22b86a3ab2f72b69263116e631e71d04cb89b6170857c5fa150"
+  },
+  "verification_wall_seconds": 1.207362
+}
