@@ -99,7 +99,7 @@
     {
       "bytes": 1320,
       "path": "evidence/private-receipt-hashes.json",
-      "sha256": "074d965c5d61f8ab6d8b748ac852104015907ba8e22e46a5db8533d48399d539"
+      "sha256": "84f54484a7553dc8f690b892590a20d672a3391286fd2fa14405c9a5d63f51ab"
     },
     {
       "bytes": 6103,
@@ -122,14 +122,14 @@
       "sha256": "c52ed762ca420703fd26ffa91d7dad48a5938fa052228e7be2d83fcb681f8cbf"
     },
     {
-      "bytes": 4230,
+      "bytes": 5167,
       "path": "optimization-ledger.md",
-      "sha256": "cddb4472d03dd0d77f4e8b854f66836d3bfdee0fc74fbaa44845f82d485b0937"
+      "sha256": "0c1cf1b9e2f4416da81e433dd5a45b89ca71b72c20e08c45a9592c3a69bd9fe6"
     },
     {
       "bytes": 4090,
       "path": "result.json",
-      "sha256": "89d6c9081bf9a64434b059676b547994be344d3749a2238f8d04c24b9e14fce5"
+      "sha256": "9b3676714d444abb1eb2376e0e1decbd2adacb140e0320e99eb1aa55be1a2a3e"
     },
     {
       "bytes": 4863,

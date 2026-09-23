@@ -39,7 +39,7 @@
   },
   "private_evidence": {
     "raw_archive_published": false,
-    "raw_archive_sha256": "94fda52c4f83022f351bd9b79610c8c742595881da283662abccb383f4d0f003",
+    "raw_archive_sha256": "a3914a713097dfda16461650ad02275cd50f121fffbd1c3da70f5ca38b88007f",
     "raw_typesafe_audit_published": false,
     "typesafe_audit_sha256": "f65692dfddbb362710a541ab83229eb6f1ff5286d8dbdb168025c019f271b862"
   },
