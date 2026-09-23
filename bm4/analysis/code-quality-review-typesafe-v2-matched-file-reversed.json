@@ -1,0 +1,1004 @@
+{
+  "authority": "advisory-only; does not affect benchmark machine scores, eligibility, human review, or acceptance",
+  "base_review": {
+    "path": "/lump/apps/agent-workflow-benchmark-results/bm4/analysis/code-quality-review-gpt6-luna.md",
+    "sha256": "7977e3482f507936a86089e11481efba0a1c08fea1a9f272c4ec50049538d55d"
+  },
+  "candidate_order": "reversed",
+  "context_scope": "matched-file",
+  "decision_mode": "comparative",
+  "duration_seconds": 1.617,
+  "files": [
+    {
+      "left": {
+        "dimensions": {
+          "correctness": {
+            "confidence": 0.0,
+            "distribution_expected_score": 2.62,
+            "distribution_score_delta": 0.02,
+            "probabilities": {
+              "0": 0.16,
+              "1": 0.07,
+              "2": 0.19,
+              "3": 0.15,
+              "4": 0.43
+            },
+            "score": 2.6
+          },
+          "maintainability": {
+            "confidence": 0.23,
+            "distribution_expected_score": 3.09,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.07,
+              "1": 0.06,
+              "2": 0.14,
+              "3": 0.17,
+              "4": 0.56
+            },
+            "score": 3.08
+          },
+          "robustness": {
+            "confidence": 0.03,
+            "distribution_expected_score": 2.82,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.12,
+              "1": 0.06,
+              "2": 0.2,
+              "3": 0.12,
+              "4": 0.5
+            },
+            "score": 2.83
+          },
+          "usability": {
+            "confidence": 0.0,
+            "distribution_expected_score": 2.47,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.16,
+              "1": 0.08,
+              "2": 0.27,
+              "3": 0.11,
+              "4": 0.38
+            },
+            "score": 2.47
+          }
+        },
+        "quality_percent": 68.95,
+        "review_focus": "usability",
+        "strength": "maintainability"
+      },
+      "path": "priority_picker/__init__.py",
+      "right": {
+        "dimensions": {
+          "correctness": {
+            "confidence": 0.0,
+            "distribution_expected_score": 2.59,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.17,
+              "1": 0.07,
+              "2": 0.19,
+              "3": 0.14,
+              "4": 0.43
+            },
+            "score": 2.58
+          },
+          "maintainability": {
+            "confidence": 0.17,
+            "distribution_expected_score": 3.02,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.09,
+              "1": 0.06,
+              "2": 0.14,
+              "3": 0.16,
+              "4": 0.55
+            },
+            "score": 3.01
+          },
+          "robustness": {
+            "confidence": 0.01,
+            "distribution_expected_score": 2.82,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.14,
+              "1": 0.06,
+              "2": 0.17,
+              "3": 0.1,
+              "4": 0.53
+            },
+            "score": 2.81
+          },
+          "usability": {
+            "confidence": 0.0,
+            "distribution_expected_score": 2.68,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.14,
+              "1": 0.06,
+              "2": 0.23,
+              "3": 0.12,
+              "4": 0.45
+            },
+            "score": 2.68
+          }
+        },
+        "quality_percent": 69.0,
+        "review_focus": "correctness",
+        "strength": "maintainability"
+      }
+    },
+    {
+      "left": {
+        "dimensions": {
+          "correctness": {
+            "confidence": 0.54,
+            "distribution_expected_score": 1.37,
+            "distribution_score_delta": 0.02,
+            "probabilities": {
+              "0": 0.1,
+              "1": 0.58,
+              "2": 0.21,
+              "3": 0.07,
+              "4": 0.04
+            },
+            "score": 1.35
+          },
+          "maintainability": {
+            "confidence": 0.49,
+            "distribution_expected_score": 1.46,
+            "distribution_score_delta": 0.02,
+            "probabilities": {
+              "0": 0.09,
+              "1": 0.53,
+              "2": 0.25,
+              "3": 0.09,
+              "4": 0.04
+            },
+            "score": 1.44
+          },
+          "robustness": {
+            "confidence": 0.44,
+            "distribution_expected_score": 1.5,
+            "distribution_score_delta": 0.02,
+            "probabilities": {
+              "0": 0.08,
+              "1": 0.53,
+              "2": 0.25,
+              "3": 0.09,
+              "4": 0.05
+            },
+            "score": 1.52
+          },
+          "usability": {
+            "confidence": 0.53,
+            "distribution_expected_score": 1.38,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.09,
+              "1": 0.5700000000000001,
+              "2": 0.24,
+              "3": 0.07,
+              "4": 0.03
+            },
+            "score": 1.38
+          }
+        },
+        "quality_percent": 35.49,
+        "review_focus": "correctness",
+        "strength": "robustness"
+      },
+      "path": "priority_picker/priority.py",
+      "right": {
+        "dimensions": {
+          "correctness": {
+            "confidence": 0.28,
+            "distribution_expected_score": 3.12,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.01,
+              "1": 0.06,
+              "2": 0.16,
+              "3": 0.34,
+              "4": 0.43
+            },
+            "score": 3.13
+          },
+          "maintainability": {
+            "confidence": 0.32,
+            "distribution_expected_score": 3.17,
+            "distribution_score_delta": 0.02,
+            "probabilities": {
+              "0": 0.01,
+              "1": 0.05,
+              "2": 0.14,
+              "3": 0.36,
+              "4": 0.44
+            },
+            "score": 3.19
+          },
+          "robustness": {
+            "confidence": 0.3,
+            "distribution_expected_score": 3.14,
+            "distribution_score_delta": 0.02,
+            "probabilities": {
+              "0": 0.01,
+              "1": 0.05,
+              "2": 0.14,
+              "3": 0.39,
+              "4": 0.41
+            },
+            "score": 3.16
+          },
+          "usability": {
+            "confidence": 0.3,
+            "distribution_expected_score": 3.15,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.01,
+              "1": 0.05,
+              "2": 0.15,
+              "3": 0.36,
+              "4": 0.43
+            },
+            "score": 3.16
+          }
+        },
+        "quality_percent": 78.92,
+        "review_focus": "correctness",
+        "strength": "maintainability"
+      }
+    },
+    {
+      "left": {
+        "dimensions": {
+          "correctness": {
+            "confidence": 0.17,
+            "distribution_expected_score": 1.94,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.19,
+              "1": 0.15,
+              "2": 0.33,
+              "3": 0.19,
+              "4": 0.14
+            },
+            "score": 1.93
+          },
+          "maintainability": {
+            "confidence": 0.21,
+            "distribution_expected_score": 2.12,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.15,
+              "1": 0.11,
+              "2": 0.34,
+              "3": 0.27,
+              "4": 0.13
+            },
+            "score": 2.13
+          },
+          "robustness": {
+            "confidence": 0.43,
+            "distribution_expected_score": 2.13,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.09,
+              "1": 0.1,
+              "2": 0.44,
+              "3": 0.33,
+              "4": 0.04
+            },
+            "score": 2.12
+          },
+          "usability": {
+            "confidence": 0.32,
+            "distribution_expected_score": 1.97,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.15,
+              "1": 0.13,
+              "2": 0.39999999999999997,
+              "3": 0.24,
+              "4": 0.08
+            },
+            "score": 1.96
+          }
+        },
+        "quality_percent": 50.8,
+        "review_focus": "correctness",
+        "strength": "maintainability"
+      },
+      "path": "priority_picker/server.py",
+      "right": {
+        "dimensions": {
+          "correctness": {
+            "confidence": 0.04,
+            "distribution_expected_score": 1.76,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.27,
+              "1": 0.16,
+              "2": 0.27,
+              "3": 0.14,
+              "4": 0.16
+            },
+            "score": 1.76
+          },
+          "maintainability": {
+            "confidence": 0.2,
+            "distribution_expected_score": 2.03,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.17,
+              "1": 0.13,
+              "2": 0.32,
+              "3": 0.26,
+              "4": 0.12
+            },
+            "score": 2.04
+          },
+          "robustness": {
+            "confidence": 0.46,
+            "distribution_expected_score": 2.06,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.09,
+              "1": 0.11,
+              "2": 0.48,
+              "3": 0.29,
+              "4": 0.03
+            },
+            "score": 2.07
+          },
+          "usability": {
+            "confidence": 0.28,
+            "distribution_expected_score": 1.91,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.18,
+              "1": 0.11,
+              "2": 0.41000000000000003,
+              "3": 0.22,
+              "4": 0.08
+            },
+            "score": 1.91
+          }
+        },
+        "quality_percent": 48.25,
+        "review_focus": "correctness",
+        "strength": "robustness"
+      }
+    },
+    {
+      "left": {
+        "dimensions": {
+          "correctness": {
+            "confidence": 0.66,
+            "distribution_expected_score": 1.19,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.11,
+              "1": 0.63,
+              "2": 0.23,
+              "3": 0.02,
+              "4": 0.01
+            },
+            "score": 1.19
+          },
+          "maintainability": {
+            "confidence": 0.54,
+            "distribution_expected_score": 1.32,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.11,
+              "1": 0.54,
+              "2": 0.28,
+              "3": 0.06,
+              "4": 0.01
+            },
+            "score": 1.33
+          },
+          "robustness": {
+            "confidence": 0.75,
+            "distribution_expected_score": 1.15,
+            "distribution_score_delta": 0.02,
+            "probabilities": {
+              "0": 0.07,
+              "1": 0.72,
+              "2": 0.2,
+              "3": 0.01,
+              "4": 0.0
+            },
+            "score": 1.17
+          },
+          "usability": {
+            "confidence": 0.62,
+            "distribution_expected_score": 1.26,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.1,
+              "1": 0.59,
+              "2": 0.27,
+              "3": 0.03,
+              "4": 0.01
+            },
+            "score": 1.27
+          }
+        },
+        "quality_percent": 30.8,
+        "review_focus": "robustness",
+        "strength": "maintainability"
+      },
+      "path": "priority_picker/web/app.js",
+      "right": {
+        "dimensions": {
+          "correctness": {
+            "confidence": 0.38,
+            "distribution_expected_score": 1.91,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.06,
+              "1": 0.29,
+              "2": 0.39,
+              "3": 0.2,
+              "4": 0.06
+            },
+            "score": 1.92
+          },
+          "maintainability": {
+            "confidence": 0.41,
+            "distribution_expected_score": 1.78,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.06,
+              "1": 0.34,
+              "2": 0.4,
+              "3": 0.16,
+              "4": 0.04
+            },
+            "score": 1.78
+          },
+          "robustness": {
+            "confidence": 0.46,
+            "distribution_expected_score": 2.07,
+            "distribution_score_delta": 0.02,
+            "probabilities": {
+              "0": 0.04,
+              "1": 0.21,
+              "2": 0.43,
+              "3": 0.28,
+              "4": 0.04
+            },
+            "score": 2.09
+          },
+          "usability": {
+            "confidence": 0.46,
+            "distribution_expected_score": 2.04,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.04,
+              "1": 0.22,
+              "2": 0.45,
+              "3": 0.24,
+              "4": 0.05
+            },
+            "score": 2.04
+          }
+        },
+        "quality_percent": 48.64,
+        "review_focus": "maintainability",
+        "strength": "robustness"
+      }
+    },
+    {
+      "left": {
+        "dimensions": {
+          "correctness": {
+            "confidence": 0.37,
+            "distribution_expected_score": 2.59,
+            "distribution_score_delta": 0.02,
+            "probabilities": {
+              "0": 0.02,
+              "1": 0.09,
+              "2": 0.34,
+              "3": 0.38,
+              "4": 0.17
+            },
+            "score": 2.57
+          },
+          "maintainability": {
+            "confidence": 0.38,
+            "distribution_expected_score": 2.73,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.03,
+              "1": 0.07,
+              "2": 0.28,
+              "3": 0.38,
+              "4": 0.24
+            },
+            "score": 2.74
+          },
+          "robustness": {
+            "confidence": 0.52,
+            "distribution_expected_score": 2.26,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.03,
+              "1": 0.1,
+              "2": 0.52,
+              "3": 0.28,
+              "4": 0.07
+            },
+            "score": 2.27
+          },
+          "usability": {
+            "confidence": 0.49,
+            "distribution_expected_score": 2.31,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.02,
+              "1": 0.11,
+              "2": 0.49,
+              "3": 0.3,
+              "4": 0.08
+            },
+            "score": 2.32
+          }
+        },
+        "quality_percent": 62.5,
+        "review_focus": "robustness",
+        "strength": "maintainability"
+      },
+      "path": "priority_picker/web/index.html",
+      "right": {
+        "dimensions": {
+          "correctness": {
+            "confidence": 0.35,
+            "distribution_expected_score": 2.59,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.02,
+              "1": 0.1,
+              "2": 0.34,
+              "3": 0.35,
+              "4": 0.19
+            },
+            "score": 2.59
+          },
+          "maintainability": {
+            "confidence": 0.44,
+            "distribution_expected_score": 2.78,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.01,
+              "1": 0.07,
+              "2": 0.28,
+              "3": 0.41,
+              "4": 0.23
+            },
+            "score": 2.78
+          },
+          "robustness": {
+            "confidence": 0.49,
+            "distribution_expected_score": 2.4,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.02,
+              "1": 0.07,
+              "2": 0.48,
+              "3": 0.35,
+              "4": 0.08
+            },
+            "score": 2.41
+          },
+          "usability": {
+            "confidence": 0.39,
+            "distribution_expected_score": 2.48,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.01,
+              "1": 0.1,
+              "2": 0.42,
+              "3": 0.34,
+              "4": 0.13
+            },
+            "score": 2.47
+          }
+        },
+        "quality_percent": 64.36,
+        "review_focus": "robustness",
+        "strength": "maintainability"
+      }
+    },
+    {
+      "left": {
+        "dimensions": {
+          "correctness": {
+            "confidence": 0.33,
+            "distribution_expected_score": 2.62,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.03,
+              "1": 0.1,
+              "2": 0.31,
+              "3": 0.33999999999999997,
+              "4": 0.22
+            },
+            "score": 2.63
+          },
+          "maintainability": {
+            "confidence": 0.4,
+            "distribution_expected_score": 2.95,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.02,
+              "1": 0.07,
+              "2": 0.18,
+              "3": 0.4,
+              "4": 0.33
+            },
+            "score": 2.95
+          },
+          "robustness": {
+            "confidence": 0.33,
+            "distribution_expected_score": 2.6,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.05,
+              "1": 0.09,
+              "2": 0.28,
+              "3": 0.37,
+              "4": 0.21
+            },
+            "score": 2.61
+          },
+          "usability": {
+            "confidence": 0.41,
+            "distribution_expected_score": 2.72,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.02,
+              "1": 0.09,
+              "2": 0.25,
+              "3": 0.43,
+              "4": 0.21
+            },
+            "score": 2.72
+          }
+        },
+        "quality_percent": 67.96,
+        "review_focus": "robustness",
+        "strength": "maintainability"
+      },
+      "path": "priority_picker/web/styles.css",
+      "right": {
+        "dimensions": {
+          "correctness": {
+            "confidence": 0.38,
+            "distribution_expected_score": 2.04,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.07,
+              "1": 0.22,
+              "2": 0.41,
+              "3": 0.2,
+              "4": 0.1
+            },
+            "score": 2.04
+          },
+          "maintainability": {
+            "confidence": 0.34,
+            "distribution_expected_score": 2.45,
+            "distribution_score_delta": 0.02,
+            "probabilities": {
+              "0": 0.03,
+              "1": 0.11,
+              "2": 0.39,
+              "3": 0.32,
+              "4": 0.15
+            },
+            "score": 2.43
+          },
+          "robustness": {
+            "confidence": 0.36,
+            "distribution_expected_score": 2.23,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.05,
+              "1": 0.16,
+              "2": 0.41000000000000003,
+              "3": 0.27,
+              "4": 0.11
+            },
+            "score": 2.23
+          },
+          "usability": {
+            "confidence": 0.4,
+            "distribution_expected_score": 2.06,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.06,
+              "1": 0.21,
+              "2": 0.42,
+              "3": 0.23,
+              "4": 0.08
+            },
+            "score": 2.06
+          }
+        },
+        "quality_percent": 54.7,
+        "review_focus": "correctness",
+        "strength": "maintainability"
+      }
+    },
+    {
+      "left": {
+        "dimensions": {
+          "correctness": {
+            "confidence": 0.45,
+            "distribution_expected_score": 2.92,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.02,
+              "1": 0.06,
+              "2": 0.19,
+              "3": 0.44,
+              "4": 0.29
+            },
+            "score": 2.93
+          },
+          "maintainability": {
+            "confidence": 0.52,
+            "distribution_expected_score": 2.99,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.01,
+              "1": 0.04,
+              "2": 0.18,
+              "3": 0.49,
+              "4": 0.28
+            },
+            "score": 2.99
+          },
+          "robustness": {
+            "confidence": 0.52,
+            "distribution_expected_score": 2.83,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.01,
+              "1": 0.06,
+              "2": 0.22,
+              "3": 0.51,
+              "4": 0.2
+            },
+            "score": 2.82
+          },
+          "usability": {
+            "confidence": 0.54,
+            "distribution_expected_score": 2.99,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.01,
+              "1": 0.04,
+              "2": 0.17,
+              "3": 0.51,
+              "4": 0.27
+            },
+            "score": 2.99
+          }
+        },
+        "quality_percent": 73.16,
+        "review_focus": "robustness",
+        "strength": "usability"
+      },
+      "path": "tests/public/test_priority.py",
+      "right": {
+        "dimensions": {
+          "correctness": {
+            "confidence": 0.67,
+            "distribution_expected_score": 2.12,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.01,
+              "1": 0.12,
+              "2": 0.64,
+              "3": 0.2,
+              "4": 0.03
+            },
+            "score": 2.12
+          },
+          "maintainability": {
+            "confidence": 0.64,
+            "distribution_expected_score": 2.23,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.01,
+              "1": 0.08,
+              "2": 0.62,
+              "3": 0.25,
+              "4": 0.04
+            },
+            "score": 2.23
+          },
+          "robustness": {
+            "confidence": 0.68,
+            "distribution_expected_score": 2.16,
+            "distribution_score_delta": 0.01,
+            "probabilities": {
+              "0": 0.01,
+              "1": 0.09,
+              "2": 0.65,
+              "3": 0.23,
+              "4": 0.02
+            },
+            "score": 2.17
+          },
+          "usability": {
+            "confidence": 0.68,
+            "distribution_expected_score": 2.17,
+            "distribution_score_delta": 0.0,
+            "probabilities": {
+              "0": 0.01,
+              "1": 0.09,
+              "2": 0.65,
+              "3": 0.22,
+              "4": 0.03
+            },
+            "score": 2.17
+          }
+        },
+        "quality_percent": 54.19,
+        "review_focus": "correctness",
+        "strength": "maintainability"
+      }
+    }
+  ],
+  "model": "jev-1.13.0",
+  "question_set": "benchmark-code-quality/v2",
+  "requests_detail": [
+    {
+      "candidate_order": "reversed",
+      "context_scope": "matched-file",
+      "duration_seconds": 0.261,
+      "input_tokens": 2911,
+      "model": "jev-1.13.0",
+      "output_tokens": 170,
+      "paths": [
+        "priority_picker/__init__.py"
+      ],
+      "question_set": "benchmark-code-quality/v2",
+      "request_id": "req_01a0ccb8f8687c2d98ceb3b01baa16ed",
+      "request_sha256": "6d247231b4c73e80562453bc06a5a771ad5ffdf91cceebaab9e587049f861a1b"
+    },
+    {
+      "candidate_order": "reversed",
+      "context_scope": "matched-file",
+      "duration_seconds": 0.194,
+      "input_tokens": 6140,
+      "model": "jev-1.13.0",
+      "output_tokens": 170,
+      "paths": [
+        "priority_picker/priority.py"
+      ],
+      "question_set": "benchmark-code-quality/v2",
+      "request_id": "req_01a0ccb8f91b7efcb7c3760f7a8c8229",
+      "request_sha256": "743e6bf4548c2343e226383431605ed256686b01dd59517254fe8680f4053078"
+    },
+    {
+      "candidate_order": "reversed",
+      "context_scope": "matched-file",
+      "duration_seconds": 0.219,
+      "input_tokens": 4227,
+      "model": "jev-1.13.0",
+      "output_tokens": 170,
+      "paths": [
+        "priority_picker/server.py"
+      ],
+      "question_set": "benchmark-code-quality/v2",
+      "request_id": "req_01a0ccb8f9e679058d7bca69193a1778",
+      "request_sha256": "c9b1bcd4b09f2cee0b0782560fb671f3f8d4f50ffaa02780607a4950f15298ab"
+    },
+    {
+      "candidate_order": "reversed",
+      "context_scope": "matched-file",
+      "duration_seconds": 0.216,
+      "input_tokens": 6609,
+      "model": "jev-1.13.0",
+      "output_tokens": 170,
+      "paths": [
+        "priority_picker/web/app.js"
+      ],
+      "question_set": "benchmark-code-quality/v2",
+      "request_id": "req_01a0ccb8fabd753aa79ff6b7e6d7ffaa",
+      "request_sha256": "825d1ef420a088e9d1126f38052d84f252aff919aa2ef3361aea691e96789472"
+    },
+    {
+      "candidate_order": "reversed",
+      "context_scope": "matched-file",
+      "duration_seconds": 0.205,
+      "input_tokens": 4682,
+      "model": "jev-1.13.0",
+      "output_tokens": 170,
+      "paths": [
+        "priority_picker/web/index.html"
+      ],
+      "question_set": "benchmark-code-quality/v2",
+      "request_id": "req_01a0ccb8fb957949bc4448fc5fb6dc5b",
+      "request_sha256": "5e11a1f5cd2a77d0281d4cd8c3c452c599ca7445b3c8941e67ef4a9d11c50ce5"
+    },
+    {
+      "candidate_order": "reversed",
+      "context_scope": "matched-file",
+      "duration_seconds": 0.283,
+      "input_tokens": 8850,
+      "model": "jev-1.13.0",
+      "output_tokens": 170,
+      "paths": [
+        "priority_picker/web/styles.css"
+      ],
+      "question_set": "benchmark-code-quality/v2",
+      "request_id": "req_01a0ccb8fc6e7f58ae2144b76137030e",
+      "request_sha256": "cce58d58ca6b36a910a690d3fdc175435b920fcd9ad5a98696e730362da059e1"
+    },
+    {
+      "candidate_order": "reversed",
+      "context_scope": "matched-file",
+      "duration_seconds": 0.239,
+      "input_tokens": 4953,
+      "model": "jev-1.13.0",
+      "output_tokens": 170,
+      "paths": [
+        "tests/public/test_priority.py"
+      ],
+      "question_set": "benchmark-code-quality/v2",
+      "request_id": "req_01a0ccb8fd947eaa87fb5d565f5eaa0e",
+      "request_sha256": "dbf280c98ebeae4fa2194da1a8d8236bc6e46f294693655e91baf7b8fdfc4db1"
+    }
+  ],
+  "requirements_sha256": "f2c955e9a947dde0a4788c89621a6f59f808cdee9e730a1ed7187a04bc5fa6ef",
+  "schema": "agent-workflow/benchmark-code-quality-review/v1",
+  "sdk_logging": {
+    "level": "DEBUG",
+    "output": "/lump/apps/agent-workflow-benchmark-results/bm4/analysis/typesafe-sdk-debug-followup.log"
+  },
+  "source_roots": {
+    "left": "/lump/apps/agent-workflow-benchmark-results/bm4/structured-direct/final-project",
+    "right": "/lump/apps/agent-workflow-benchmark-results/bm4/agent-workflow-optimized/final-project"
+  },
+  "source_sha256": {
+    "left": {
+      "priority_picker/__init__.py": "3404afd8760706526f68f9c75e6baa6795906bd3a4c0e9dba984701d2953b6a6",
+      "priority_picker/priority.py": "2a5f837d3e60739e9f22346c1f68cab7240ef41d92d49af867ca8f373cc80aa0",
+      "priority_picker/server.py": "3999665c77f4e7c42247a9fdafa38a97f5f5f9a1918a0a37ffd201995a69be12",
+      "priority_picker/web/app.js": "1275ae2354852cffd7db7c1af1930e3946d6eadca3346a5b27f46892c9a57042",
+      "priority_picker/web/index.html": "bd97dc6976f1186dab4f9b145f62200f634c48be0032eb6327811968ddc95573",
+      "priority_picker/web/styles.css": "396f68ebfc645839c0215f8b19ccd8c2784969ae05c6a24ead43c463268d03a4",
+      "tests/public/test_priority.py": "5021e7bbcb82c34fa28eafff9cd5727a0d912049750c6a4e83795e3b05a0a509"
+    },
+    "right": {
+      "priority_picker/__init__.py": "3404afd8760706526f68f9c75e6baa6795906bd3a4c0e9dba984701d2953b6a6",
+      "priority_picker/priority.py": "2af5e2be378941011b99f452f6dd7282e09d89513b0c3b99cbf67986ce316dfe",
+      "priority_picker/server.py": "3999665c77f4e7c42247a9fdafa38a97f5f5f9a1918a0a37ffd201995a69be12",
+      "priority_picker/web/app.js": "936ee8d02e86d49d6a0419626a4edaf27f79d50ba8ebb7701bb95bd6b9309809",
+      "priority_picker/web/index.html": "5893b0211ee9b32a73f3a9c161541516ef9d02cd4e20d7037a56514f83495f80",
+      "priority_picker/web/styles.css": "ee30d8b37a5b930876359c090cabb4721dbc2324b502e11516418f8801775fcf",
+      "tests/public/test_priority.py": "eca5acd4e18ba42954ce62c344dd3e00649abc87251776a8a8e642e0160ad446"
+    }
+  },
+  "usage": {
+    "input_tokens": 38372,
+    "output_tokens": 1190,
+    "requests": 7
+  },
+  "validation_warnings": [],
+  "weights": {
+    "correctness": 0.35,
+    "maintainability": 0.25,
+    "robustness": 0.25,
+    "usability": 0.15
+  }
+}

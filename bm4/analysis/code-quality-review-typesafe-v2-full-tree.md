@@ -1,3 +1,7 @@
+# Combined code quality review
+
+## Deterministic review
+
 # BM4 source code quality review
 
 Static review of the published final-project source in both BM4 arms. Scores are reviewer judgments on a 0–100 scale, not the benchmark machine scores. They weigh task correctness and edge handling most heavily, then maintainability, accessibility, and fit for the file’s role. Related files were read together where behavior crosses Python, HTML, JavaScript, and CSS. No tests or live browser checks were run for this review.
@@ -123,3 +127,108 @@ Start in shadow/advisory mode. TypeSafe distributions and Noul checks are review
 ### Consultation gate
 
 No TypeSafe integration has been implemented. The proposed next step is a read-only shadow evaluator that emits a side-by-side advisory receipt and Markdown comparison, without changing the existing BM4 score or report. Review this boundary and the four-dimension rubric before implementation.
+
+## TypeSafe advisory supplement
+
+> Supplemental semantic evidence only. It does not replace, revise, or average into the deterministic review, benchmark machine scores, eligibility, human review, or acceptance.
+
+Model: `jev-1.13.0`  
+Left source: `/lump/apps/agent-workflow-benchmark-results/bm4/structured-direct/final-project`  
+Right source: `/lump/apps/agent-workflow-benchmark-results/bm4/agent-workflow-optimized/final-project`  
+Question set: `benchmark-code-quality/v2`  
+Context scope: `full-tree`  
+Candidate order: `balanced`  
+Review mode: `comparative`  
+Source files: 7 matched pairs; requests: 1; input tokens: 32511; output tokens: 1166
+
+Composite percentages are deterministic weighted averages of TypeSafe expected 0–4 scores. Files have equal weight in arm averages.
+
+| File | Left | Right | Delta (right − left) | Left strength / review focus | Right strength / review focus |
+| --- | ---: | ---: | ---: | --- | --- |
+| `priority_picker/__init__.py` | 85.3% | 85.2% | -0.2 pp | maintainability / correctness | usability / maintainability |
+| `priority_picker/priority.py` | 61.0% | 54.3% | -6.7 pp | usability / robustness | usability / robustness |
+| `priority_picker/server.py` | 52.9% | 45.5% | -7.4 pp | maintainability / robustness | maintainability / robustness |
+| `priority_picker/web/app.js` | 53.2% | 36.0% | -17.2 pp | maintainability / robustness | maintainability / correctness |
+| `priority_picker/web/index.html` | 76.9% | 65.9% | -11.0 pp | maintainability / robustness | maintainability / robustness |
+| `priority_picker/web/styles.css` | 55.5% | 60.8% | +5.2 pp | maintainability / correctness | maintainability / correctness |
+| `tests/public/test_priority.py` | 75.5% | 60.1% | -15.4 pp | usability / robustness | correctness / robustness |
+
+## Per-file dimensions
+
+### `priority_picker/__init__.py`
+
+| Dimension | Weight | Left score / confidence | Right score / confidence |
+| --- | ---: | ---: | ---: |
+| correctness | 35% | 3.32 / 0.44 | 3.47 / 0.56 |
+| robustness | 25% | 3.37 / 0.47 | 3.39 / 0.49 |
+| maintainability | 25% | 3.57 / 0.64 | 3.28 / 0.40 |
+| usability | 15% | 3.44 / 0.53 | 3.50 / 0.58 |
+
+### `priority_picker/priority.py`
+
+| Dimension | Weight | Left score / confidence | Right score / confidence |
+| --- | ---: | ---: | ---: |
+| correctness | 35% | 2.46 / 0.21 | 2.21 / 0.28 |
+| robustness | 25% | 2.40 / 0.29 | 2.12 / 0.39 |
+| maintainability | 25% | 2.42 / 0.25 | 2.14 / 0.28 |
+| usability | 15% | 2.49 / 0.27 | 2.23 / 0.30 |
+
+### `priority_picker/server.py`
+
+| Dimension | Weight | Left score / confidence | Right score / confidence |
+| --- | ---: | ---: | ---: |
+| correctness | 35% | 2.20 / 0.08 | 1.81 / 0.25 |
+| robustness | 25% | 1.85 / 0.41 | 1.71 / 0.43 |
+| maintainability | 25% | 2.28 / 0.04 | 1.99 / 0.26 |
+| usability | 15% | 2.10 / 0.13 | 1.74 / 0.27 |
+
+### `priority_picker/web/app.js`
+
+| Dimension | Weight | Left score / confidence | Right score / confidence |
+| --- | ---: | ---: | ---: |
+| correctness | 35% | 2.14 / 0.51 | 1.35 / 0.44 |
+| robustness | 25% | 1.90 / 0.66 | 1.44 / 0.45 |
+| maintainability | 25% | 2.31 / 0.47 | 1.53 / 0.37 |
+| usability | 15% | 2.17 / 0.56 | 1.49 / 0.43 |
+
+### `priority_picker/web/index.html`
+
+| Dimension | Weight | Left score / confidence | Right score / confidence |
+| --- | ---: | ---: | ---: |
+| correctness | 35% | 3.12 / 0.27 | 2.50 / 0.25 |
+| robustness | 25% | 2.86 / 0.53 | 2.48 / 0.35 |
+| maintainability | 25% | 3.23 / 0.36 | 2.96 / 0.14 |
+| usability | 15% | 3.07 / 0.51 | 2.67 / 0.30 |
+
+### `priority_picker/web/styles.css`
+
+| Dimension | Weight | Left score / confidence | Right score / confidence |
+| --- | ---: | ---: | ---: |
+| correctness | 35% | 2.08 / 0.11 | 2.29 / 0.28 |
+| robustness | 25% | 2.12 / 0.36 | 2.42 / 0.39 |
+| maintainability | 25% | 2.47 / 0.18 | 2.62 / 0.31 |
+| usability | 15% | 2.31 / 0.23 | 2.46 / 0.33 |
+
+### `tests/public/test_priority.py`
+
+| Dimension | Weight | Left score / confidence | Right score / confidence |
+| --- | ---: | ---: | ---: |
+| correctness | 35% | 3.01 / 0.46 | 2.45 / 0.49 |
+| robustness | 25% | 2.88 / 0.56 | 2.37 / 0.58 |
+| maintainability | 25% | 3.09 / 0.47 | 2.40 / 0.55 |
+| usability | 15% | 3.17 / 0.52 | 2.37 / 0.61 |
+
+## Arm averages
+
+- Left: 65.8%
+- Right: 58.2%
+
+## TypeSafe response consistency
+
+1 answer(s) had a scalar score that differed from the expected value of its probability distribution by more than 0.03 points. Raw values are retained; the scalar score is used in the advisory summary.
+
+- `F000_left_usability`: score 3.44, distribution expectation 3.40
+
+## Limits
+
+Scores are qualitative model judgments, not verified defects or proof that code works. Confidence and distributions are retained in the JSON sidecar. Run deterministic tests and independent human review for acceptance.

@@ -1,3 +1,7 @@
+# Combined code quality review
+
+## Deterministic review
+
 # BM4 source code quality review
 
 Static review of the published final-project source in both BM4 arms. Scores are reviewer judgments on a 0–100 scale, not the benchmark machine scores. They weigh task correctness and edge handling most heavily, then maintainability, accessibility, and fit for the file’s role. Related files were read together where behavior crosses Python, HTML, JavaScript, and CSS. No tests or live browser checks were run for this review.
@@ -123,3 +127,115 @@ Start in shadow/advisory mode. TypeSafe distributions and Noul checks are review
 ### Consultation gate
 
 No TypeSafe integration has been implemented. The proposed next step is a read-only shadow evaluator that emits a side-by-side advisory receipt and Markdown comparison, without changing the existing BM4 score or report. Review this boundary and the four-dimension rubric before implementation.
+
+## TypeSafe advisory supplement
+
+> Supplemental semantic evidence only. It does not replace, revise, or average into the deterministic review, benchmark machine scores, eligibility, human review, or acceptance.
+
+Model: `jev-1.13.0`  
+Left source: `/lump/apps/agent-workflow-benchmark-results/bm4/structured-direct/final-project`  
+Right source: `/lump/apps/agent-workflow-benchmark-results/bm4/agent-workflow-optimized/final-project`  
+Question set: `benchmark-code-quality/v1`  
+Context scope: `full-tree`  
+Candidate order: `balanced`  
+Review mode: `comparative`  
+Source files: 7 matched pairs; requests: 1; input tokens: 29637; output tokens: 1166
+
+Composite percentages are deterministic weighted averages of TypeSafe expected 0–4 scores. Files have equal weight in arm averages.
+
+| File | Left | Right | Delta (right − left) | Left strength / review focus | Right strength / review focus |
+| --- | ---: | ---: | ---: | --- | --- |
+| `priority_picker/__init__.py` | 54.3% | 51.5% | -2.8 pp | maintainability / robustness | maintainability / usability |
+| `priority_picker/priority.py` | 66.1% | 62.1% | -3.9 pp | usability / maintainability | correctness / maintainability |
+| `priority_picker/server.py` | 54.0% | 44.5% | -9.6 pp | maintainability / correctness | maintainability / correctness |
+| `priority_picker/web/app.js` | 54.0% | 41.0% | -13.0 pp | maintainability / robustness | robustness / maintainability |
+| `priority_picker/web/index.html` | 77.3% | 68.4% | -8.9 pp | maintainability / robustness | maintainability / robustness |
+| `priority_picker/web/styles.css` | 63.1% | 65.5% | +2.4 pp | maintainability / correctness | correctness / usability |
+| `tests/public/test_priority.py` | 79.6% | 64.5% | -15.1 pp | maintainability / robustness | maintainability / robustness |
+
+## Per-file dimensions
+
+### `priority_picker/__init__.py`
+
+| Dimension | Weight | Left score / confidence | Right score / confidence |
+| --- | ---: | ---: | ---: |
+| correctness | 35% | 2.11 / 0.00 | 2.09 / 0.00 |
+| robustness | 25% | 1.92 / 0.00 | 1.99 / 0.00 |
+| maintainability | 25% | 2.61 / 0.00 | 2.15 / 0.00 |
+| usability | 15% | 2.01 / 0.00 | 1.95 / 0.00 |
+
+### `priority_picker/priority.py`
+
+| Dimension | Weight | Left score / confidence | Right score / confidence |
+| --- | ---: | ---: | ---: |
+| correctness | 35% | 2.65 / 0.41 | 2.55 / 0.34 |
+| robustness | 25% | 2.69 / 0.48 | 2.43 / 0.37 |
+| maintainability | 25% | 2.55 / 0.37 | 2.43 / 0.32 |
+| usability | 15% | 2.70 / 0.44 | 2.52 / 0.37 |
+
+### `priority_picker/server.py`
+
+| Dimension | Weight | Left score / confidence | Right score / confidence |
+| --- | ---: | ---: | ---: |
+| correctness | 35% | 1.87 / 0.00 | 1.48 / 0.22 |
+| robustness | 25% | 2.11 / 0.35 | 1.75 / 0.36 |
+| maintainability | 25% | 2.60 / 0.19 | 2.12 / 0.07 |
+| usability | 15% | 2.20 / 0.13 | 1.96 / 0.32 |
+
+### `priority_picker/web/app.js`
+
+| Dimension | Weight | Left score / confidence | Right score / confidence |
+| --- | ---: | ---: | ---: |
+| correctness | 35% | 2.16 / 0.51 | 1.64 / 0.38 |
+| robustness | 25% | 2.01 / 0.66 | 1.65 / 0.47 |
+| maintainability | 25% | 2.28 / 0.48 | 1.63 / 0.42 |
+| usability | 15% | 2.21 / 0.52 | 1.64 / 0.45 |
+
+### `priority_picker/web/index.html`
+
+| Dimension | Weight | Left score / confidence | Right score / confidence |
+| --- | ---: | ---: | ---: |
+| correctness | 35% | 3.16 / 0.30 | 2.71 / 0.34 |
+| robustness | 25% | 2.82 / 0.55 | 2.60 / 0.42 |
+| maintainability | 25% | 3.27 / 0.39 | 2.91 / 0.38 |
+| usability | 15% | 3.08 / 0.53 | 2.73 / 0.41 |
+
+### `priority_picker/web/styles.css`
+
+| Dimension | Weight | Left score / confidence | Right score / confidence |
+| --- | ---: | ---: | ---: |
+| correctness | 35% | 2.34 / 0.05 | 2.66 / 0.27 |
+| robustness | 25% | 2.49 / 0.38 | 2.58 / 0.44 |
+| maintainability | 25% | 2.76 / 0.37 | 2.65 / 0.31 |
+| usability | 15% | 2.62 / 0.32 | 2.55 / 0.33 |
+
+### `tests/public/test_priority.py`
+
+| Dimension | Weight | Left score / confidence | Right score / confidence |
+| --- | ---: | ---: | ---: |
+| correctness | 35% | 3.20 / 0.54 | 2.55 / 0.51 |
+| robustness | 25% | 2.95 / 0.63 | 2.54 / 0.55 |
+| maintainability | 25% | 3.33 / 0.57 | 2.66 / 0.59 |
+| usability | 15% | 3.29 / 0.60 | 2.59 / 0.57 |
+
+## Arm averages
+
+- Left: 64.1%
+- Right: 56.8%
+
+## Limits
+
+Scores are qualitative model judgments, not verified defects or proof that code works. Confidence and distributions are retained in the JSON sidecar. Run deterministic tests and independent human review for acceptance.
+
+## Focused TypeSafe cross-checks of deterministic findings
+
+These Noul probabilities address the stated yes proposition for each source-grounded concern. They are advisory and uncalibrated; they do not change the deterministic findings or scores.
+
+| Concern checked | Yes probability |
+| --- | ---: |
+| The earlier review claim that an unhashable status can cause raw TypeError before controlled validation. | 0.51 |
+| calculate_priority can be called directly with numeric factor values outside 1 through 5 because the function performs arithmetic but does not validate factor bounds. | 0.31 |
+| sort_items does not specify an id tie-breaker when two records have equal values for the selected sort key; Python's stable sort therefore retains input order for those ties. | 0.92 |
+| The server catches NotImplementedError while loading backlog data and maps it to HTTP 422, potentially classifying an implementation error as invalid input. | 0.85 |
+
+Question set `benchmark-review-finding-checks/v1`; 1228 input and 83 output tokens. Full receipt: `typesafe-deterministic-finding-checks.json`.
