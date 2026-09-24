@@ -4,6 +4,9 @@
 ![Studies](https://img.shields.io/badge/published-BM3%E2%80%93BM5-2ea44f)
 ![License](https://img.shields.io/badge/license-Apache--2.0-green)
 
+**Agent-Workflow case study:** https://ngallodev-software.uk/projects/agent-workflow  
+**Benchmark harness:** https://github.com/ngallodev-software/agent-workflow-benchmark
+
 Public benchmark evidence and finished software for
 [Agent-Workflow](https://github.com/ngallodev-software/agent-workflow).
 
