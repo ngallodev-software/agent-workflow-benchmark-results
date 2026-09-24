@@ -7,6 +7,13 @@
 **Agent-Workflow case study:** https://ngallodev-software.uk/projects/agent-workflow  
 **Benchmark harness:** https://github.com/ngallodev-software/agent-workflow-benchmark
 
+## Quick summary
+
+- **What it is:** the public evidence repository for completed Agent-Workflow benchmark studies and the software each arm produced.
+- **What to look at:** paired scores, wall time, provider-token usage, treatment identity, eligibility, finished outputs, and study-specific limitations.
+- **How to read it:** these are inspectable development observations, not a leaderboard or generalized causal result.
+- **Current signal:** BM5 used less wall time and fewer provider tokens in its single eligible pair while also receiving a lower machine score, making the tradeoff visible rather than hiding it.
+
 Public benchmark evidence and finished software for
 [Agent-Workflow](https://github.com/ngallodev-software/agent-workflow).
 
