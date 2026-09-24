@@ -7,7 +7,7 @@
 **Agent-Workflow case study:** https://ngallodev-software.uk/projects/agent-workflow  
 **Benchmark harness:** https://github.com/ngallodev-software/agent-workflow-benchmark
 
-## Quick summary
+## Summary
 
 - **What it is:** the public evidence repository for completed Agent-Workflow benchmark studies and the software each arm produced.
 - **What to look at:** paired scores, wall time, provider-token usage, treatment identity, eligibility, finished outputs, and study-specific limitations.
