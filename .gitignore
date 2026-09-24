@@ -12,3 +12,4 @@ typesafe-api-audit.jsonl
 __pycache__/
 *.pyc
 *-run*/
+**.tar.gz
