@@ -44,6 +44,7 @@ instrument -> benchmark -> diagnose -> optimize -> re-benchmark
 | BM3 | `structured-direct/v1` vs `agent-workflow-full/v1` | Execution complete; visual/human review pending | Isolate lifecycle/orchestration overhead from structured prompt discipline |
 | BM4 | `structured-direct/v1` vs `agent-workflow-bm4/v1` | One eligible pair; descriptive development result | Measure early context/execution optimization effects |
 | BM5 | `structured-direct/v1` vs `agent-workflow-bm5/v1` | One eligible pair; awaiting human review | Measure steering-first lifecycle and later execution/context optimizations |
+| Routing semantic v1 | deterministic routing control vs bounded TypeSafe/Jev evidence | Infrastructure implementation; full oracle-backed study not run | Measure correctness, calibration, reliability, and request overhead for the three live routing seams |
 
 ## Current paired measurements
 
@@ -85,6 +86,7 @@ historical/round2/    sanitized historical baseline
 bm3/                  BM3 task, outputs, metrics, analysis, qualification evidence
 bm4/                  BM4 task, outputs, metrics, analysis, qualification evidence
 bm5/                  BM5 task, outputs, metrics, analysis, qualification evidence
+comparative-eval/      bounded decision-study methodology, status, and future results
 schema/               public result metadata schema
 ```
 
@@ -95,3 +97,10 @@ See [METHODOLOGY.md](METHODOLOGY.md) and [EVIDENCE_POLICY.md](EVIDENCE_POLICY.md
 ## Claim discipline
 
 Development runs are descriptive. A single paired run does not establish a generalized winner or treatment effect. Published summaries must identify sample size, treatment identity, environment, scoring eligibility, and known limitations.
+
+
+## Comparative decision-study program
+
+A separate public-evidence lane now exists under [comparative-eval/](comparative-eval/), backed by the merged Agent-Workflow 0.11.10 / benchmark 0.4.0 / comparative-eval 0.2.0 study stack. It is intentionally distinct from BM3–BM5: those studies evaluate workflow/lifecycle treatments, while routing-semantic-v1 evaluates bounded semantic decisions against independently frozen labels.
+
+The current subtree contains implementation status and methodology boundaries only. It does not contain a completed effectiveness result. See [routing-semantic-v1 implementation status](comparative-eval/routing-semantic-v1/IMPLEMENTATION_STATUS.md) for the portfolio-ready architecture diagram and completion boundary.
