@@ -101,6 +101,6 @@ Development runs are descriptive. A single paired run does not establish a gener
 
 ## Comparative decision-study program
 
-A separate public-evidence lane now exists under [comparative-eval/](comparative-eval/). It is intentionally distinct from BM3–BM5: those studies evaluate workflow/lifecycle treatments, while routing-semantic-v1 evaluates bounded semantic decisions against independently frozen labels.
+A separate public-evidence lane now exists under [comparative-eval/](comparative-eval/), backed by the merged Agent-Workflow 0.11.10 / benchmark 0.4.0 / comparative-eval 0.2.0 study stack. It is intentionally distinct from BM3–BM5: those studies evaluate workflow/lifecycle treatments, while routing-semantic-v1 evaluates bounded semantic decisions against independently frozen labels.
 
 The current subtree contains implementation status and methodology boundaries only. It does not contain a completed effectiveness result. See [routing-semantic-v1 implementation status](comparative-eval/routing-semantic-v1/IMPLEMENTATION_STATUS.md) for the portfolio-ready architecture diagram and completion boundary.
