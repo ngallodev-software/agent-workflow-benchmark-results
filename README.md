@@ -44,7 +44,7 @@ instrument -> benchmark -> diagnose -> optimize -> re-benchmark
 | BM3 | `structured-direct/v1` vs `agent-workflow-full/v1` | Execution complete; visual/human review pending | Isolate lifecycle/orchestration overhead from structured prompt discipline |
 | BM4 | `structured-direct/v1` vs `agent-workflow-bm4/v1` | One eligible pair; descriptive development result | Measure early context/execution optimization effects |
 | BM5 | `structured-direct/v1` vs `agent-workflow-bm5/v1` | One eligible pair; awaiting human review | Measure steering-first lifecycle and later execution/context optimizations |
-| Routing semantic v1 | deterministic routing control vs bounded TypeSafe/Jev evidence | Infrastructure implementation; full oracle-backed study not run | Measure correctness, calibration, reliability, and request overhead for the three live routing seams |
+| Routing semantic v1 | deterministic routing control vs bounded TypeSafe/Jev evidence | 120-case corpus frozen; independent oracle and live study pending | Measure correctness, calibration, reliability, and request overhead for the three live routing seams |
 
 ## Current paired measurements
 
