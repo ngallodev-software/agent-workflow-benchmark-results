@@ -1,6 +1,6 @@
 # Routing Semantic v1 — Implementation Status
 
-**Current state:** implementation merged; 120-case inference corpus frozen; independent oracle and live study not yet complete.
+**Current state:** implementation merged; 120-case inference corpus and exact blinded adjudicator handoff frozen; independent oracle labels and live study not yet complete.
 
 ## Evidence pipeline
 
@@ -40,11 +40,15 @@ flowchart LR
 - routing-semantic-v1 study specification is frozen at version 1.1.0;
 - routing-semantic-corpus-v1.0.0 contains 120 public-safe cases;
 - every case is eligible for all three routing seams;
-- benchmark tooling exports a blinded oracle-authoring view with construction tags and treatment outputs removed.
+- the exact 120-case blinded oracle-authoring artifact is committed and hash-pinned for both independent A/B adjudicators;
+- corpus SHA-256: `e4b33df3b3752b32cdb362833765cc8f0c9cc024473071209563d73284011280`;
+- oracle-authoring-view SHA-256: `a5a40224793a50d9371e9ae437e144b15812829ba1cd56a5564dc6ba28846a0a`;
+- benchmark tooling validates independent adjudication passes against the exact view SHA-256, detects A/B disagreements, exports a C-only blinded dispute view, and freezes the final oracle under the preregistered A/B/C rules;
+- the oracle freeze writes a sidecar manifest that persists the final oracle SHA-256 plus authoring-view, adjudication-pass, C-view, resolution, timestamp, and count provenance.
 
 ## Intentionally incomplete
 
-- the independent blinded oracle has not been adjudicated/frozen;
+- independent A and B adjudication passes have not yet been completed, so the final oracle is not yet frozen;
 - no live TypeSafe/Jev comparative inference run has been executed on the frozen corpus;
 - the full study has not been run;
 - no Jev effectiveness claim is currently supported.
