@@ -25,14 +25,14 @@ flowchart LR
     J --> K
 ~~~
 
-## Implemented on integration branches
+## Implemented and merged
 
-- preregistered routing-semantic-v1 study specification;
+- agent-workflow-comparative-eval 0.2.0 preregistered routing-semantic-v1 study specification;
 - separate inference-case and oracle contracts;
 - lossless Choice/Noul/Score evidence persistence;
 - provider-request deduplication for batched calls;
 - explicit exclusion records and sample eligibility;
-- benchmark run/report/publication command lane;
+- Agent-Workflow 0.11.10 lossless semantic evidence path and agent-workflow-benchmark 0.4.0 run/report/publication command lane;
 - public-safe publication manifest and Markdown report generation.
 
 ## Intentionally incomplete
