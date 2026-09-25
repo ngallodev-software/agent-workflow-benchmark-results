@@ -1,6 +1,6 @@
 # Routing Semantic v1 — Implementation Status
 
-**Current state:** study infrastructure in implementation/validation; full oracle-backed study not yet run.
+**Current state:** implementation merged; 120-case inference corpus frozen; independent oracle and live study not yet complete.
 
 ## Evidence pipeline
 
@@ -35,10 +35,17 @@ flowchart LR
 - Agent-Workflow 0.11.10 lossless semantic evidence path and agent-workflow-benchmark 0.4.0 run/report/publication command lane;
 - public-safe publication manifest and Markdown report generation.
 
+## Completed empirical prerequisites
+
+- routing-semantic-v1 study specification is frozen at version 1.1.0;
+- routing-semantic-corpus-v1.0.0 contains 120 public-safe cases;
+- every case is eligible for all three routing seams;
+- benchmark tooling exports a blinded oracle-authoring view with construction tags and treatment outputs removed.
+
 ## Intentionally incomplete
 
-- the full target corpus has not been frozen;
-- the independent blinded oracle has not been frozen;
+- the independent blinded oracle has not been adjudicated/frozen;
+- no live TypeSafe/Jev comparative inference run has been executed on the frozen corpus;
 - the full study has not been run;
 - no Jev effectiveness claim is currently supported.
 
