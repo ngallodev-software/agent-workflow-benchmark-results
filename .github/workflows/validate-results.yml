@@ -45,3 +45,54 @@ jobs:
           done
           python -m json.tool bm3/result.json >/dev/null
           python -m json.tool bm3/evidence/typesafe-qualification-summary.json >/dev/null
+
+
+  routing-semantic-v1-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Validate routing semantic v1 public result
+        run: |
+          python -m json.tool comparative-eval/routing-semantic-v1/results/summary.json >/dev/null
+          python -m json.tool comparative-eval/routing-semantic-v1/results/verification.json >/dev/null
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path("comparative-eval/routing-semantic-v1/results")
+          summary = json.loads((root / "summary.json").read_text())
+          verification = json.loads((root / "verification.json").read_text())
+
+          assert summary["study_id"] == "routing-semantic-v1"
+          assert summary["study_version"] == "1.1.0"
+          assert summary["study_eligible"] is True
+          assert summary["counts"] == {
+              "cases": 120,
+              "observations": 360,
+              "provider_requests": 120,
+              "oracle_outcomes": 360,
+              "exclusions": 0,
+          }
+          assert verification["status"] == "pass"
+          assert verification["checks"]["manifest_integrity"] is True
+          assert verification["checks"]["privacy_contract"] is True
+          assert verification["checks"]["no_private_adjudicator_votes"] is True
+          assert verification["checks"]["no_human_resolution_rationale"] is True
+          assert verification["checks"]["no_human_participant_identity"] is True
+          assert verification["checks"]["no_reasoning_summaries"] is True
+          assert verification["counts"] == {
+              "cases": 120,
+              "exclusions": 0,
+              "observations": 360,
+              "oracle_records": 120,
+              "outcomes": 360,
+              "provider_requests": 120,
+          }
+          expected = "b07c3899dfa6c504a919e6eb425f2e561267bc994ee86ce880972ae8b84abad2"
+          checksum = (root / "source-p3-public-archive.sha256").read_text().split()[0]
+          assert checksum == expected
+          assert summary["public_bundle_sha256"] == expected
+          PY
