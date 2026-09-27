@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "exact_file_allowlist": true,
+    "full_frozen_sample": true,
+    "manifest_integrity": true,
+    "no_human_participant_identity": true,
+    "no_human_resolution_rationale": true,
+    "no_private_adjudicator_votes": true,
+    "no_reasoning_summaries": true,
+    "oracle_public_projection": true,
+    "privacy_contract": true,
+    "study_eligible": true
+  },
+  "counts": {
+    "cases": 120,
+    "exclusions": 0,
+    "observations": 360,
+    "oracle_records": 120,
+    "outcomes": 360,
+    "provider_requests": 120
+  },
+  "dataset_version": "routing-semantic-corpus-v1.0.0",
+  "format": "agent-workflow-benchmark/decision-study-p3-verification/v1",
+  "oracle_version": "routing-semantic-oracle-v1.0.0",
+  "status": "pass",
+  "study_id": "routing-semantic-v1",
+  "study_version": "1.1.0",
+  "verified_at": "2026-09-27T08:05:32.440290+00:00"
+}

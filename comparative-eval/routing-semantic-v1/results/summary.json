@@ -1,0 +1,90 @@
+{
+  "schema": "agent-workflow-benchmark-results/routing-semantic-v1-summary/v1",
+  "study_id": "routing-semantic-v1",
+  "study_version": "1.1.0",
+  "dataset_version": "routing-semantic-corpus-v1.0.0",
+  "oracle_version": "routing-semantic-oracle-v1.0.0",
+  "study_eligible": true,
+  "counts": {
+    "cases": 120,
+    "observations": 360,
+    "provider_requests": 120,
+    "oracle_outcomes": 360,
+    "exclusions": 0
+  },
+  "seams": {
+    "routing.interaction-required/v1": {
+      "candidate_accuracy": 0.9166666666666666,
+      "control_accuracy": 0.7166666666666667,
+      "candidate_minus_control_accuracy": {
+        "mean": 0.2,
+        "lower": 0.108333,
+        "upper": 0.291667,
+        "confidence": 0.95
+      },
+      "beneficial_changes": 30,
+      "harmful_changes": 6,
+      "calibration": {
+        "brier": 0.07740916666666667,
+        "ece": 0.14941666666666664
+      }
+    },
+    "routing.task-class/v1": {
+      "candidate_accuracy": 0.8166666666666667,
+      "control_accuracy": 0.525,
+      "candidate_minus_control_accuracy": {
+        "mean": 0.291667,
+        "lower": 0.2,
+        "upper": 0.383333,
+        "confidence": 0.95
+      },
+      "beneficial_changes": 38,
+      "harmful_changes": 3,
+      "changed_both_wrong": 10,
+      "calibration": {
+        "multiclass_brier": 0.2734583047648199,
+        "log_loss": 1.8024204966748258,
+        "normalized_vectors": 1,
+        "total_vectors": 120,
+        "max_absolute_mass_deviation": 0.009999999999999898
+      }
+    },
+    "routing.semantic-risk/v1": {
+      "candidate_mae": 0.28975,
+      "control_mae": 0.2916666666666667,
+      "candidate_minus_control_absolute_error": {
+        "mean": -0.001917,
+        "lower": -0.101917,
+        "upper": 0.092917,
+        "confidence": 0.95
+      },
+      "calibration": {
+        "multiclass_brier": 0.32484261418902827,
+        "log_loss": 0.5353127880906801,
+        "normalized_vectors": 1,
+        "total_vectors": 120,
+        "max_absolute_mass_deviation": 0.009999999999999898
+      }
+    }
+  },
+  "request_efficiency": {
+    "unique_requests": 120,
+    "status_counts": {
+      "success": 120
+    },
+    "duration_seconds": {
+      "n": 120,
+      "p50": 0.14679169247392565,
+      "p90": 0.1864665893139318,
+      "p95": 0.22056870844680812
+    },
+    "usage": {
+      "input_tokens": 91445,
+      "output_tokens": 10598,
+      "provider_total_tokens": 102043,
+      "cost_evidence_complete": false,
+      "token_evidence_complete": true
+    }
+  },
+  "public_bundle_sha256": "b07c3899dfa6c504a919e6eb425f2e561267bc994ee86ce880972ae8b84abad2"
+}
