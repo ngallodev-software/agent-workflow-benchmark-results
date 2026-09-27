@@ -1,7 +1,7 @@
 # Agent-Workflow Benchmark Results
 
 ![Evidence](https://img.shields.io/badge/evidence-public%20and%20sanitized-blue)
-![Studies](https://img.shields.io/badge/published-BM3%E2%80%93BM5-2ea44f)
+![Studies](https://img.shields.io/badge/published-BM3%E2%80%93BM5%20%2B%20Routing%20Semantic%20v1-2ea44f)
 ![License](https://img.shields.io/badge/license-Apache--2.0-green)
 
 **Agent-Workflow case study:** https://ngallodev-software.uk/projects/agent-workflow  
@@ -44,7 +44,7 @@ instrument -> benchmark -> diagnose -> optimize -> re-benchmark
 | BM3 | `structured-direct/v1` vs `agent-workflow-full/v1` | Execution complete; visual/human review pending | Isolate lifecycle/orchestration overhead from structured prompt discipline |
 | BM4 | `structured-direct/v1` vs `agent-workflow-bm4/v1` | One eligible pair; descriptive development result | Measure early context/execution optimization effects |
 | BM5 | `structured-direct/v1` vs `agent-workflow-bm5/v1` | One eligible pair; awaiting human review | Measure steering-first lifecycle and later execution/context optimizations |
-| Routing semantic v1 | deterministic routing control vs bounded TypeSafe/Jev evidence | 120-case corpus frozen; independent oracle and live study pending | Measure correctness, calibration, reliability, and request overhead for the three live routing seams |
+| Routing semantic v1 | deterministic routing control vs bounded TypeSafe/Jev evidence | **Complete; 120-case P3-verified public result** | Measure correctness, calibration, reliability, and request overhead for the three live routing seams |
 
 ## Current paired measurements
 
@@ -75,7 +75,7 @@ flowchart LR
     H --> I
 ```
 
-The qualification evidence records three successes for each study: BM3 had one task-class disagreement under shadow disposition and semantic-risk uncertainty fallback in all three phases; BM4 and BM5 matched deterministic route recommendations in all three phases. BM4 also contains separate advisory TypeSafe source-review experiments; these do not affect its benchmark score or eligibility. No benchmark presently demonstrates that Jev/TypeSafe improves product quality or reduces execution cost.
+The qualification evidence records three successes for each study: BM3 had one task-class disagreement under shadow disposition and semantic-risk uncertainty fallback in all three phases; BM4 and BM5 matched deterministic route recommendations in all three phases. BM4 also contains separate advisory TypeSafe source-review experiments; these do not affect its benchmark score or eligibility. The completed routing-semantic-v1 decision study shows higher TypeSafe/Jev candidate accuracy on task-class and interaction-required routing decisions in its frozen 120-case corpus, while semantic-risk ordinal error is approximately unchanged. This bounded decision evidence does not establish downstream product-quality improvement or an execution-cost advantage.
 
 Official background: [Jev/System One announcement](https://typesafe.ai/blog/introducing-system-one-models-and-jev), [System One](https://docs.typesafe.ai/concepts/system-one.md), [state](https://docs.typesafe.ai/concepts/state.md), [Choice](https://docs.typesafe.ai/primitives/choice.md), [Noul](https://docs.typesafe.ai/primitives/noul.md), [Score](https://docs.typesafe.ai/primitives/score.md), and [Python SDK](https://docs.typesafe.ai/sdk/python.md).
 
@@ -103,4 +103,6 @@ Development runs are descriptive. A single paired run does not establish a gener
 
 A separate public-evidence lane now exists under [comparative-eval/](comparative-eval/), backed by the merged Agent-Workflow 0.11.10 / benchmark 0.4.0 / comparative-eval 0.2.0 study stack. It is intentionally distinct from BM3–BM5: those studies evaluate workflow/lifecycle treatments, while routing-semantic-v1 evaluates bounded semantic decisions against independently frozen labels.
 
-The current subtree contains implementation status and methodology boundaries only. It does not contain a completed effectiveness result. See [routing-semantic-v1 implementation status](comparative-eval/routing-semantic-v1/IMPLEMENTATION_STATUS.md) for the portfolio-ready architecture diagram and completion boundary.
+The routing-semantic-v1 subtree now contains the completed, P3-verified public result. See [the published result](comparative-eval/routing-semantic-v1/results/README.md), [implementation/publication status](comparative-eval/routing-semantic-v1/IMPLEMENTATION_STATUS.md), and [publication integrity record](comparative-eval/routing-semantic-v1/results/PUBLICATION-INTEGRITY.md).
+
+In the frozen 120-case cohort, candidate accuracy was 91.67% vs 71.67% for interaction-required and 81.67% vs 52.50% for task class. Semantic-risk MAE was 0.28975 vs 0.29167, with the paired interval spanning zero. These are seam-specific study results, not a general leaderboard or downstream causal claim.
