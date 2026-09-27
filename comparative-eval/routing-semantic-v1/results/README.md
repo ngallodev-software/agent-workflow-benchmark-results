@@ -103,20 +103,12 @@ P3 publishes a redacted oracle projection rather than the private frozen oracle.
 
 See `verification.json` and `PUBLICATION-INTEGRITY.md`.
 
-## Exact evidence bundle
+## Reviewed P3 source bundle
 
-The exact verified P3 tree is stored as base64 parts under `bundle/`.
-
-Reconstruct it with:
-
-~~~bash
-cat bundle/parts/part-*.b64 | tr -d '\n' | base64 -d > routing-semantic-v1-p3-public.tar.gz
-sha256sum -c bundle/routing-semantic-v1-p3-public.tar.gz.sha256
-tar -xzf routing-semantic-v1-p3-public.tar.gz
-~~~
-
-The expected archive SHA-256 is:
+The independently verified sanitized P3 archive used for this publication is hash-pinned as:
 
 `b07c3899dfa6c504a919e6eb425f2e561267bc994ee86ce880972ae8b84abad2`
 
-The archive contains the public corpus, public oracle projection, full neutral observation/request/outcome evidence, report, study specification, publication manifest, and SHA manifest.
+See `source-p3-public-archive.sha256`.
+
+The repository publishes the human-readable result, machine-readable aggregate summary, P3 verification record, report, and publication-integrity note. The larger sanitized evidence tree is retained as the reviewed P3 source bundle rather than being re-encoded into transport-only text fragments.
