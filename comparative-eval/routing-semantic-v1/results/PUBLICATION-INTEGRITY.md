@@ -23,8 +23,10 @@ Verified:
 
 The P3 verification artifact is published as `verification.json`.
 
-The exact sanitized tree is recoverable from the base64 archive parts. Archive SHA-256:
+The reviewed sanitized source archive is hash-pinned as:
 
 `b07c3899dfa6c504a919e6eb425f2e561267bc994ee86ce880972ae8b84abad2`
+
+The archive itself is retained outside this repository; this public tree publishes the approved aggregate/reporting artifacts plus the checksum of the reviewed source bundle.
 
 Private P0B Inspect logs and the private frozen oracle are not published.
