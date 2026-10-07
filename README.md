@@ -1,13 +1,28 @@
-# Agent-Workflow Benchmark Results
+<p align="center">
+  <a href="https://ngallodev-software.uk/" title="Nate G. / ngallodev-software portfolio">
+    <img src="https://raw.githubusercontent.com/ngallodev-software/portfolio-site/master/public/icon-husky-r1-192.png" width="88" alt="Nate G. portfolio husky mark">
+  </a>
+</p>
 
-![Evidence](https://img.shields.io/badge/evidence-public%20and%20sanitized-blue)
-![Studies](https://img.shields.io/badge/published-BM3%E2%80%93BM5%20%2B%20Routing%20Semantic%20v1-2ea44f)
-![License](https://img.shields.io/badge/license-Apache--2.0-green)
+<h1 align="center">Agent-Workflow Benchmark Results</h1>
 
-**Agent-Workflow case study:** https://ngallodev-software.uk/projects/agent-workflow  
-**Benchmark harness:** https://github.com/ngallodev-software/agent-workflow-benchmark
+<p align="center"><strong>Public, sanitized evidence and finished software from Agent-Workflow benchmark and semantic-decision studies.</strong></p>
+
+<p align="center">
+  <a href="https://ngallodev-software.uk/projects/agent-workflow">Agent-Workflow case study</a> ·
+  <a href="https://jevhunt.com/projects/ngallodev-software/agent-workflow-benchmark-results/">JevHunt listing</a> ·
+  <a href="https://github.com/ngallodev-software/agent-workflow-benchmark">Benchmark harness</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/evidence-public%20and%20sanitized-blue" alt="">
+  <img src="https://img.shields.io/badge/research-inspectable%20artifacts-2ea44f" alt="">
+  <img src="https://img.shields.io/badge/license-Apache--2.0-green" alt="">
+</p>
 
 ## Summary
+
+> **Evidence & chronology:** this repository is part of the wider Agent-Workflow engineering ecosystem. A private `agent-workflow-lab-notebook` preserves dated decisions, failures, corrections, and evidence lineage; public README and portfolio claims are curated from public artifacts and reviewed notebook history. JevHunt is an independent discovery/indexing surface, not an endorsement or independent validation.
 
 - **What it is:** the public evidence repository for completed Agent-Workflow benchmark studies and the software each arm produced.
 - **What to look at:** paired scores, wall time, provider-token usage, treatment identity, eligibility, finished outputs, and study-specific limitations.
