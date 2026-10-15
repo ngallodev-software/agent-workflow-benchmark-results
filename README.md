@@ -22,7 +22,7 @@
 
 ## Summary
 
-> **Evidence & chronology:** this repository is part of the wider Agent-Workflow engineering ecosystem. A private `agent-workflow-lab-notebook` preserves dated decisions, failures, corrections, and evidence lineage; public README and portfolio claims are curated from public artifacts and reviewed notebook history. JevHunt is an independent discovery/indexing surface, not an endorsement or independent validation.
+> **Evidence & chronology:** this repository is part of the wider Agent-Workflow engineering ecosystem. A private lab notebook preserves dated decisions, failures, corrections, and evidence lineage; public README and portfolio claims are curated from public artifacts and reviewed notebook history. JevHunt is an independent discovery/indexing surface, not an endorsement or independent validation.
 
 - **What it is:** the public evidence repository for completed Agent-Workflow benchmark studies and the software each arm produced.
 - **What to look at:** paired scores, wall time, provider-token usage, treatment identity, eligibility, finished outputs, and study-specific limitations.
