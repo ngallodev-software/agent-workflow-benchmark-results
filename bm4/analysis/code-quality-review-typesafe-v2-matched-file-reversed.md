@@ -133,8 +133,8 @@ No TypeSafe integration has been implemented. The proposed next step is a read-o
 > Supplemental semantic evidence only. It does not replace, revise, or average into the deterministic review, benchmark machine scores, eligibility, human review, or acceptance.
 
 Model: `jev-1.13.0`  
-Left source: `/lump/apps/agent-workflow-benchmark-results/bm4/structured-direct/final-project`  
-Right source: `/lump/apps/agent-workflow-benchmark-results/bm4/agent-workflow-optimized/final-project`  
+Left source: `bm4/structured-direct/final-project`  
+Right source: `bm4/agent-workflow-optimized/final-project`  
 Question set: `benchmark-code-quality/v2`  
 Context scope: `matched-file`  
 Candidate order: `reversed`  
